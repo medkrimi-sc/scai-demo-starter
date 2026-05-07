@@ -1,10 +1,10 @@
 {
-  "name": "kit-nextjs-product-starter",
+  "name": "industrielle-alliance",
   "description": "Application utilizing Sitecore JavaScript Services and Next.js",
   "version": "1.0.0",
   "private": true,
   "config": {
-    "appName": "kit-nextjs-product-starter",
+    "appName": "industrielle-alliance",
     "graphQLEndpointPath": "/sitecore/api/graph/edge",
     "language": "en",
     "template": "nextjs"

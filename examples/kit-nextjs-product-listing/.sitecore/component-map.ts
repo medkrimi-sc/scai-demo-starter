@@ -103,6 +103,7 @@ import * as promoimageprops from 'src/components/promo-image/promo-image.props';
 import * as PromoBlock from 'src/components/promo-block/PromoBlock';
 import * as promoblockprops from 'src/components/promo-block/promo-block.props';
 import * as PromoAnimatedImageRightdev from 'src/components/promo-animated/PromoAnimatedImageRight.dev';
+import * as PromoAnimatedEmptyImageEditing from 'src/components/promo-animated/PromoAnimatedEmptyImageEditing';
 import * as PromoAnimatedDefaultdev from 'src/components/promo-animated/PromoAnimatedDefault.dev';
 import * as PromoAnimated from 'src/components/promo-animated/PromoAnimated';
 import * as promoanimatedutil from 'src/components/promo-animated/promo-animated.util';
@@ -367,6 +368,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['PromoBlock', { ...PromoBlock }],
   ['promo-block', { ...promoblockprops }],
   ['PromoAnimatedImageRight', { ...PromoAnimatedImageRightdev }],
+  ['PromoAnimatedEmptyImageEditing', { ...PromoAnimatedEmptyImageEditing }],
   ['PromoAnimatedDefault', { ...PromoAnimatedDefaultdev }],
   ['PromoAnimated', { ...PromoAnimated, componentType: 'client' }],
   ['promo-animated', { ...promoanimatedutil, ...promoanimatedprops }],
