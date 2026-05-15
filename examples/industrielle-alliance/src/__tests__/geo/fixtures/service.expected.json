@@ -1,0 +1,20 @@
+{
+  "services": [
+    {
+      "category": "Insurance",
+      "name": "Personal and business coverage",
+      "description": "Explore car, home, life, and specialty insurance products, and connect with an advisor for a tailored recommendation."
+    },
+    {
+      "category": "Savings and retirement",
+      "name": "Savings and retirement planning",
+      "description": "Calculate needs, compare registered plans, and access tools to plan income in retirement with guidance from iA specialists."
+    },
+    {
+      "category": "Wealth management",
+      "name": "Wealth and investment solutions",
+      "description": "Access discretionary and advisory portfolios, wealth transfer strategies, and private client services aligned to your goals."
+    }
+  ],
+  "lastModified": "2026-03-05T17:28:26.398Z"
+}
