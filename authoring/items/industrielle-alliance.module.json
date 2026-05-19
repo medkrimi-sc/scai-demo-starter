@@ -1,0 +1,14 @@
+{
+  "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+  "namespace": "Project.industrielle-alliance",
+  "items": {
+    "path": "industrielle-alliance",
+    "includes": [
+      {
+        "name": "ia.content",
+        "path": "/sitecore/content/industrielle-alliance",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      }
+    ]
+  }
+}

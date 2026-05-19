@@ -1,0 +1,51 @@
+﻿---
+ID: "5ede7db9-2680-4037-84cb-b694f6f73631"
+Parent: "b394b203-8be5-4e71-bdc7-0ceeb6b92c57"
+Template: "d12c656f-b4a4-46a9-a851-67666fef7838"
+Path: "/sitecore/content/industrielle-alliance/industrielle-alliance/Home/Data/Multipromo"
+BranchID: "cd466675-6107-40fd-bbb5-21078cc22eb4"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{A053ED9F-4099-4682-9411-2B4C98E481E4}"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "740c3c05-7398-4d77-81fd-64352cb3bb19"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{AFF8F79F-7376-4152-BD91-ECAA318C7183}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0b4b904d-19fa-4af3-92a7-3b4ee329f0ee"
+      Hint: title
+      Value: New content item
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260519T083514Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{12FFAC4C-565F-4C9A-B63E-7F77E96B4D1F}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "10dc4f29-9562-464f-9a90-2631a22bcb41"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "d2df817c-ce29-4af7-86d3-b121f5c8fb5e"
+      Hint: droplistLabel
+      Value: New content item
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260519T083526Z
