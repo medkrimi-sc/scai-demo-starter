@@ -129,6 +129,15 @@ import * as HeroImageBottomdev from 'src/components/hero/HeroImageBottom.dev';
 import * as HeroImageBackgrounddev from 'src/components/hero/HeroImageBackground.dev';
 import * as HeroDefaultdev from 'src/components/hero/HeroDefault.dev';
 import * as Hero from 'src/components/hero/Hero';
+import * as SecondaryNavBar from 'src/components/global-header/SecondaryNavBar';
+import * as PrimaryNavBar from 'src/components/global-header/PrimaryNavBar';
+import * as MobileHeaderNav from 'src/components/global-header/MobileHeaderNav';
+import * as IaNavIcons from 'src/components/global-header/IaNavIcons';
+import * as IaLogo from 'src/components/global-header/IaLogo';
+import * as IaHeaderLink from 'src/components/global-header/IaHeaderLink';
+import * as iaheaderutils from 'src/components/global-header/ia-header.utils';
+import * as iaheadertypes from 'src/components/global-header/ia-header.types';
+import * as iaheaderconstants from 'src/components/global-header/ia-header.constants';
 import * as GlobalHeaderDefaultdev from 'src/components/global-header/GlobalHeaderDefault.dev';
 import * as GlobalHeaderCentereddev from 'src/components/global-header/GlobalHeaderCentered.dev';
 import * as GlobalHeader from 'src/components/global-header/GlobalHeader';
@@ -305,6 +314,13 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['HeroImageBackground', { ...HeroImageBackgrounddev }],
   ['HeroDefault', { ...HeroDefaultdev }],
   ['Hero', { ...Hero, componentType: 'client' }],
+  ['SecondaryNavBar', { ...SecondaryNavBar, componentType: 'client' }],
+  ['PrimaryNavBar', { ...PrimaryNavBar, componentType: 'client' }],
+  ['MobileHeaderNav', { ...MobileHeaderNav, componentType: 'client' }],
+  ['IaNavIcons', { ...IaNavIcons }],
+  ['IaLogo', { ...IaLogo }],
+  ['IaHeaderLink', { ...IaHeaderLink, componentType: 'client' }],
+  ['ia-header', { ...iaheaderutils, ...iaheadertypes, ...iaheaderconstants }],
   ['GlobalHeaderDefault', { ...GlobalHeaderDefaultdev }],
   ['GlobalHeaderCentered', { ...GlobalHeaderCentereddev }],
   ['GlobalHeader', { ...GlobalHeader, componentType: 'client' }],

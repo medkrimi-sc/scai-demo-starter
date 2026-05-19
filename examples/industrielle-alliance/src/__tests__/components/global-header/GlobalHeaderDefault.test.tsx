@@ -4,16 +4,28 @@ import '@testing-library/jest-dom';
 import { GlobalHeaderDefault } from '@/components/global-header/GlobalHeaderDefault.dev';
 import { mockGlobalHeaderProps } from './global-header.mock.props';
 
-// Mock Next.js Link
 jest.mock('next/link', () => {
-  const MockLink = ({ children, href }: { children: React.ReactNode; href: string }) => (
-    <a href={href}>{children}</a>
+  const MockLink = ({
+    children,
+    href,
+    ...rest
+  }: {
+    children: React.ReactNode;
+    href: string;
+    className?: string;
+  }) => (
+    <a href={href} {...rest}>
+      {children}
+    </a>
   );
   MockLink.displayName = 'Link';
   return MockLink;
 });
 
-// Mock Sitecore SDK
+jest.mock('next/navigation', () => ({
+  usePathname: jest.fn(() => '/'),
+}));
+
 jest.mock('@sitecore-content-sdk/nextjs', () => ({
   Link: ({ field }: Record<string, unknown>) => {
     const linkField = field as { value?: { text?: string; href?: string } };
@@ -21,129 +33,75 @@ jest.mock('@sitecore-content-sdk/nextjs', () => ({
   },
 }));
 
-// Mock UI components
 jest.mock('@/components/ui/navigation-menu', () => ({
-  NavigationMenu: ({ children, className }: { children: React.ReactNode; className?: string }) => (
-    <nav className={className} data-testid="navigation-menu">
-      {children}
-    </nav>
+  NavigationMenu: ({ children }: { children: React.ReactNode }) => (
+    <nav data-testid="primary-navigation-menu">{children}</nav>
   ),
   NavigationMenuItem: ({ children }: { children: React.ReactNode }) => <li>{children}</li>,
-  NavigationMenuList: ({
+  NavigationMenuList: ({ children }: { children: React.ReactNode }) => <ul>{children}</ul>,
+  NavigationMenuTrigger: ({ children }: { children: React.ReactNode }) => (
+    <button type="button">{children}</button>
+  ),
+  NavigationMenuContent: ({ children }: { children: React.ReactNode }) => (
+    <div>{children}</div>
+  ),
+  NavigationMenuLink: ({
     children,
-    className,
+    asChild,
   }: {
     children: React.ReactNode;
-    className?: string;
-  }) => <ul className={className}>{children}</ul>,
+    asChild?: boolean;
+  }) => (asChild ? <>{children}</> : <a>{children}</a>),
 }));
 
 jest.mock('@/components/ui/sheet', () => ({
-  Sheet: ({ children }: { children: React.ReactNode }) => <div data-testid="sheet">{children}</div>,
-  SheetTrigger: ({ children }: { children: React.ReactNode; asChild?: boolean }) => (
-    <div data-testid="sheet-trigger">{children}</div>
-  ),
+  Sheet: ({ children }: { children: React.ReactNode }) => <div>{children}</div>,
+  SheetTrigger: ({ children }: { children: React.ReactNode }) => <div>{children}</div>,
   SheetContent: ({ children }: { children: React.ReactNode }) => (
-    <div data-testid="sheet-content">{children}</div>
+    <div data-testid="mobile-sheet-content">{children}</div>
   ),
-}));
-
-jest.mock('@/components/ui/button', () => ({
-  Button: ({ children, variant, size, asChild, className }: Record<string, unknown>) => {
-    if (asChild && React.isValidElement(children)) {
-      return React.cloneElement(children as React.ReactElement<{ className?: string }>, {
-        className: `${className || ''} button-${variant} button-${size}`.trim(),
-      });
-    }
-    return (
-      <button className={`button-${variant} button-${size}` as string} data-testid="button">
-        {children as React.ReactNode}
-      </button>
-    );
-  },
+  SheetTitle: ({ children }: { children: React.ReactNode }) => <h2>{children}</h2>,
 }));
 
 jest.mock('@/components/image/ImageWrapper.dev', () => ({
-  Default: ({ image, alt, className }: Record<string, unknown>) => (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img
-      src={(image as { value?: { src?: string } })?.value?.src}
-      alt={alt as string}
-      className={className as string}
-      data-testid="image-wrapper"
-    />
-  ),
-}));
-
-jest.mock('@/components/ui/animated-hover-nav', () => ({
-  AnimatedHoverNav: ({ children }: { children: React.ReactNode }) => (
-    <div data-testid="animated-hover-nav">{children}</div>
-  ),
-}));
-
-jest.mock('framer-motion', () => {
-  const actual = jest.requireActual('react');
-  const motion = {
-    header: actual.forwardRef(
-      (
-        { children, className }: { children: React.ReactNode; className?: string },
-        ref: React.Ref<HTMLElement>
-      ) => (
-        <header ref={ref} className={className}>
-          {children}
-        </header>
-      )
-    ),
-    div: actual.forwardRef(
-      (
-        { children, className, onClick }: Record<string, unknown>,
-        ref: React.Ref<HTMLDivElement>
-      ) => (
-        <div
-          ref={ref}
-          className={className as string}
-          onClick={onClick as React.MouseEventHandler<HTMLDivElement>}
-        >
-          {children as React.ReactNode}
-        </div>
-      )
-    ),
-    nav: ({ children }: { children: React.ReactNode }) => <nav>{children}</nav>,
-  };
-  return { motion, m: motion, AnimatePresence: ({ children }: { children: React.ReactNode }) => <>{children}</> };
-});
-
-jest.mock('lucide-react', () => ({
-  Menu: () => <span data-testid="menu-icon">Menu</span>,
+  Default: ({ alt }: { alt?: string }) => <img alt={alt} data-testid="image-wrapper" />,
 }));
 
 jest.mock('@/lib/utils', () => ({
   cn: (...classes: unknown[]) => classes.filter(Boolean).join(' '),
 }));
 
-jest.mock('@/hooks/use-match-media', () => ({
-  useMatchMedia: jest.fn(() => false),
-}));
-
 describe('GlobalHeaderDefault Component', () => {
-  it('renders without crashing', () => {
+  it('renders the iA header shell', () => {
+    render(<GlobalHeaderDefault {...mockGlobalHeaderProps} />);
+
+    expect(screen.getByRole('banner')).toBeInTheDocument();
+    expect(screen.getByText('Passer au contenu')).toBeInTheDocument();
+  });
+
+  it('renders secondary and primary navigation labels', () => {
+    render(<GlobalHeaderDefault {...mockGlobalHeaderProps} />);
+
+    expect(screen.getAllByText('Particuliers').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('Entreprises et groupes').length).toBeGreaterThan(0);
+    expect(screen.getByText('1-800-463-6236')).toBeInTheDocument();
+    expect(screen.getAllByText('Assurance').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('Épargne et retraite').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('Gestion de patrimoine').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('Me connecter').length).toBeGreaterThan(0);
+  });
+
+  it('renders inline iA logo when CMS logo has no src', () => {
     const { container } = render(<GlobalHeaderDefault {...mockGlobalHeaderProps} />);
-    expect(container.querySelector('header')).toBeInTheDocument();
+
+    expect(container.querySelector('svg[viewBox="0 0 232.08 124.05"]')).toBeInTheDocument();
+    expect(container.querySelector('svg[viewBox="0 0 149 36"]')).toBeInTheDocument();
   });
 
-  it('displays logo and navigation menu', () => {
+  it('exposes mobile menu sheet content', () => {
     render(<GlobalHeaderDefault {...mockGlobalHeaderProps} />);
-
-    expect(screen.getByTestId('image-wrapper')).toBeInTheDocument();
-    expect(screen.getByTestId('navigation-menu')).toBeInTheDocument();
-    expect(screen.getByTestId('animated-hover-nav')).toBeInTheDocument();
-  });
-
-  it('displays mobile menu trigger', () => {
-    render(<GlobalHeaderDefault {...mockGlobalHeaderProps} />);
-
-    expect(screen.getByTestId('sheet')).toBeInTheDocument();
-    expect(screen.getByTestId('sheet-trigger')).toBeInTheDocument();
-    expect(screen.getByTestId('menu-icon')).toBeInTheDocument();
+    expect(screen.getByTestId('mobile-sheet-content')).toBeInTheDocument();
   });
 });
+
+

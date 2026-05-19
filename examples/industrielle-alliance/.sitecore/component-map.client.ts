@@ -80,6 +80,10 @@ import * as HeroImageBottomdev from 'src/components/hero/HeroImageBottom.dev';
 import * as HeroImageBackgrounddev from 'src/components/hero/HeroImageBackground.dev';
 import * as HeroDefaultdev from 'src/components/hero/HeroDefault.dev';
 import * as Hero from 'src/components/hero/Hero';
+import * as SecondaryNavBar from 'src/components/global-header/SecondaryNavBar';
+import * as PrimaryNavBar from 'src/components/global-header/PrimaryNavBar';
+import * as MobileHeaderNav from 'src/components/global-header/MobileHeaderNav';
+import * as IaHeaderLink from 'src/components/global-header/IaHeaderLink';
 import * as GlobalHeaderDefaultdev from 'src/components/global-header/GlobalHeaderDefault.dev';
 import * as GlobalHeaderCentereddev from 'src/components/global-header/GlobalHeaderCentered.dev';
 import * as GlobalHeader from 'src/components/global-header/GlobalHeader';
@@ -185,6 +189,10 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['HeroImageBackground', { ...HeroImageBackgrounddev }],
   ['HeroDefault', { ...HeroDefaultdev }],
   ['Hero', { ...Hero }],
+  ['SecondaryNavBar', { ...SecondaryNavBar }],
+  ['PrimaryNavBar', { ...PrimaryNavBar }],
+  ['MobileHeaderNav', { ...MobileHeaderNav }],
+  ['IaHeaderLink', { ...IaHeaderLink }],
   ['GlobalHeaderDefault', { ...GlobalHeaderDefaultdev }],
   ['GlobalHeaderCentered', { ...GlobalHeaderCentereddev }],
   ['GlobalHeader', { ...GlobalHeader }],

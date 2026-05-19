@@ -1,7 +1,6 @@
 import { GlobalHeaderProps } from '@/components/global-header/global-header.props';
 import { Page } from '@sitecore-content-sdk/nextjs';
 
-// Mock page object with all required Page properties
 const mockPageBase = {
   mode: {
     isEditing: false,
@@ -17,7 +16,7 @@ const mockPageBase = {
       route: null,
     },
   },
-  locale: 'en',
+  locale: 'fr-CA',
 } as Page;
 
 export const mockGlobalHeaderProps: GlobalHeaderProps = {
@@ -28,12 +27,49 @@ export const mockGlobalHeaderProps: GlobalHeaderProps = {
         logo: {
           jsonValue: {
             value: {
-              src: '/logo.svg',
-              alt: 'Company Logo',
-              width: '112',
-              height: '40',
+              src: '',
+              alt: 'iA Groupe financier',
+              width: '232',
+              height: '124',
             },
           },
+        },
+        utilityNavigationLinks: {
+          targetItems: [
+            {
+              link: {
+                jsonValue: {
+                  value: {
+                    href: '/',
+                    text: 'Particuliers',
+                    linktype: 'internal',
+                  },
+                },
+              },
+            },
+            {
+              link: {
+                jsonValue: {
+                  value: {
+                    href: 'https://ia.ca/entreprise',
+                    text: 'Entreprises et groupes',
+                    linktype: 'external',
+                  },
+                },
+              },
+            },
+            {
+              link: {
+                jsonValue: {
+                  value: {
+                    href: 'https://ia.ca/conseillers-courtiers',
+                    text: 'Conseillers et courtiers',
+                    linktype: 'external',
+                  },
+                },
+              },
+            },
+          ],
         },
         primaryNavigationLinks: {
           targetItems: [
@@ -41,57 +77,48 @@ export const mockGlobalHeaderProps: GlobalHeaderProps = {
               link: {
                 jsonValue: {
                   value: {
-                    href: '/products',
-                    text: 'Products',
-                    linktype: 'internal',
+                    href: 'https://ia.ca/particuliers/assurance',
+                    text: 'Assurance',
+                    linktype: 'external',
                   },
                 },
               },
-              children: {
-                results: [],
-              },
+              children: { results: [] },
             },
             {
               link: {
                 jsonValue: {
                   value: {
-                    href: '/services',
-                    text: 'Services',
-                    linktype: 'internal',
+                    href: 'https://ia.ca/particuliers/epargne-retraite',
+                    text: 'Épargne et retraite',
+                    linktype: 'external',
                   },
                 },
               },
-              children: {
-                results: [],
-              },
+              children: { results: [] },
             },
             {
               link: {
                 jsonValue: {
                   value: {
-                    href: '/about',
-                    text: 'About',
-                    linktype: 'internal',
+                    href: 'https://ia.ca/particuliers/gestion-de-patrimoine',
+                    text: 'Gestion de patrimoine',
+                    linktype: 'external',
                   },
                 },
               },
-              children: {
-                results: [],
-              },
+              children: { results: [] },
             },
           ],
         },
         headerContact: {
           jsonValue: {
             value: {
-              href: '/contact',
-              text: 'Contact Us',
-              linktype: 'internal',
+              href: '#loginModal',
+              text: 'Me connecter',
+              linktype: 'external',
             },
           },
-        },
-        utilityNavigationLinks: {
-          targetItems: [],
         },
       },
     },

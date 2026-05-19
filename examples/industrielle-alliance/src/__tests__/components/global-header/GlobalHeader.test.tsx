@@ -30,13 +30,6 @@ jest.mock('@/components/global-header/GlobalHeaderDefault.dev', () => ({
   ),
 }));
 
-jest.mock('@/components/global-header/GlobalHeaderCentered.dev', () => ({
-  GlobalHeaderCentered: ({ isPageEditing }: { isPageEditing: boolean }) => (
-    <header data-testid="global-header-centered">
-      GlobalHeaderCentered - {isPageEditing ? 'Editing' : 'Normal'}
-    </header>
-  ),
-}));
 
 describe('GlobalHeader Component', () => {
   beforeEach(() => {
@@ -77,8 +70,8 @@ describe('GlobalHeader Component', () => {
     expect(screen.getByText(/Editing/)).toBeInTheDocument();
   });
 
-  it('renders the centered variant correctly', () => {
+  it('renders the centered variant with the iA header', () => {
     render(<GlobalHeaderCentered {...mockGlobalHeaderProps} />);
-    expect(screen.getByTestId('global-header-centered')).toBeInTheDocument();
+    expect(screen.getByTestId('global-header-default')).toBeInTheDocument();
   });
 });

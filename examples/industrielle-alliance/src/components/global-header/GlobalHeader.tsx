@@ -2,19 +2,19 @@
 import type React from 'react';
 import type { GlobalHeaderProps } from './global-header.props';
 import { GlobalHeaderDefault } from './GlobalHeaderDefault.dev';
-import { GlobalHeaderCentered } from './GlobalHeaderCentered.dev';
+
 // Data source checks are done in the child components
 
-// Default display of the component
-export const Default: React.FC<GlobalHeaderProps> = (props) => {
+function IaGlobalHeader(props: GlobalHeaderProps) {
   const { isEditing } = props.page.mode;
-
   return <GlobalHeaderDefault {...props} isPageEditing={isEditing} />;
-};
+}
 
-// Variants
-export const Centered: React.FC<GlobalHeaderProps> = (props) => {
-  const { isEditing } = props.page.mode;
+/** iA two-tier header (secondary + primary nav). */
+export const Default: React.FC<GlobalHeaderProps> = IaGlobalHeader;
 
-  return <GlobalHeaderCentered {...props} isPageEditing={isEditing} />;
-};
+/**
+ * Alaris starter partial designs use the Centered variant in XM Cloud.
+ * For industrielle-alliance we render the same iA header for both variants.
+ */
+export const Centered: React.FC<GlobalHeaderProps> = IaGlobalHeader;
