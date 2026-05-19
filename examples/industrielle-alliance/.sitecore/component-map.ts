@@ -45,6 +45,7 @@ import * as SlideCarouseldev from 'src/components/slide-carousel/SlideCarousel.d
 import * as SiteMetadata from 'src/components/site-metadata/SiteMetadata';
 import * as SecondaryNavigation from 'src/components/secondary-navigation/SecondaryNavigation';
 import * as RichTextBlock from 'src/components/rich-text-block/RichTextBlock';
+import * as PromoSlider from 'src/components/promo-slider/PromoSlider';
 import * as PromoImageTitlePartialOverlaydev from 'src/components/promo-image/PromoImageTitlePartialOverlay.dev';
 import * as PromoImageRightdev from 'src/components/promo-image/PromoImageRight.dev';
 import * as PromoImageMiddledev from 'src/components/promo-image/PromoImageMiddle.dev';
@@ -94,11 +95,15 @@ import * as ImageGallerydev from 'src/components/image-gallery/ImageGallery.dev'
 import * as ImageGallery from 'src/components/image-gallery/ImageGallery';
 import * as ImageCarouselThumbnailsdev from 'src/components/image-carousel/ImageCarouselThumbnails.dev';
 import * as ImageCarouselPreviewBelowdev from 'src/components/image-carousel/ImageCarouselPreviewBelow.dev';
+import * as ImageCarouselPagination from 'src/components/image-carousel/ImageCarouselPagination';
 import * as ImageCarouselLeftRightPreviewdev from 'src/components/image-carousel/ImageCarouselLeftRightPreview.dev';
+import * as ImageCarouselImagePanedev from 'src/components/image-carousel/ImageCarouselImagePane.dev';
+import * as ImageCarouselIaBanddev from 'src/components/image-carousel/ImageCarouselIaBand.dev';
 import * as ImageCarouselFullBleeddev from 'src/components/image-carousel/ImageCarouselFullBleed.dev';
 import * as ImageCarouselFeaturedImageLeftdev from 'src/components/image-carousel/ImageCarouselFeaturedImageLeft.dev';
 import * as ImageCarouselEditModedev from 'src/components/image-carousel/ImageCarouselEditMode.dev';
 import * as ImageCarouselDefaultdev from 'src/components/image-carousel/ImageCarouselDefault.dev';
+import * as ImageCarouselContentPaneldev from 'src/components/image-carousel/ImageCarouselContentPanel.dev';
 import * as ImageCarousel from 'src/components/image-carousel/ImageCarousel';
 import * as nextImageSrcdev from 'src/components/image/nextImageSrc.dev';
 import * as ImageWrapperdev from 'src/components/image/ImageWrapper.dev';
@@ -137,7 +142,6 @@ import * as IaLogo from 'src/components/global-header/IaLogo';
 import * as IaHeaderLink from 'src/components/global-header/IaHeaderLink';
 import * as iaheaderutils from 'src/components/global-header/ia-header.utils';
 import * as iaheadertypes from 'src/components/global-header/ia-header.types';
-import * as iaheaderconstants from 'src/components/global-header/ia-header.constants';
 import * as GlobalHeaderDefaultdev from 'src/components/global-header/GlobalHeaderDefault.dev';
 import * as GlobalHeaderCentereddev from 'src/components/global-header/GlobalHeaderCentered.dev';
 import * as GlobalHeader from 'src/components/global-header/GlobalHeader';
@@ -175,6 +179,7 @@ import * as Carddev from 'src/components/card/Card.dev';
 import * as ButtonComponent from 'src/components/button-component/ButtonComponent';
 import * as Breadcrumbs from 'src/components/breadcrumbs/Breadcrumbs';
 import * as BackgroundThumbnaildev from 'src/components/background-thumbnail/BackgroundThumbnail.dev';
+import * as ArticleListing from 'src/components/article-listing/ArticleListing';
 import * as ArticleHeader from 'src/components/article-header/ArticleHeader';
 import * as AnimatedSectiondev from 'src/components/animated-section/AnimatedSection.dev';
 import * as AlertBannerdev from 'src/components/alert-banner/AlertBanner.dev';
@@ -232,6 +237,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['SiteMetadata', { ...SiteMetadata }],
   ['SecondaryNavigation', { ...SecondaryNavigation, componentType: 'client' }],
   ['RichTextBlock', { ...RichTextBlock }],
+  ['PromoSlider', { ...PromoSlider, componentType: 'client' }],
   ['PromoImageTitlePartialOverlay', { ...PromoImageTitlePartialOverlaydev }],
   ['PromoImageRight', { ...PromoImageRightdev }],
   ['PromoImageMiddle', { ...PromoImageMiddledev }],
@@ -280,11 +286,15 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['ImageGallery', { ...ImageGallerydev, ...ImageGallery, componentType: 'client' }],
   ['ImageCarouselThumbnails', { ...ImageCarouselThumbnailsdev }],
   ['ImageCarouselPreviewBelow', { ...ImageCarouselPreviewBelowdev }],
+  ['ImageCarouselPagination', { ...ImageCarouselPagination, componentType: 'client' }],
   ['ImageCarouselLeftRightPreview', { ...ImageCarouselLeftRightPreviewdev }],
+  ['ImageCarouselImagePane', { ...ImageCarouselImagePanedev }],
+  ['ImageCarouselIaBand', { ...ImageCarouselIaBanddev }],
   ['ImageCarouselFullBleed', { ...ImageCarouselFullBleeddev }],
   ['ImageCarouselFeaturedImageLeft', { ...ImageCarouselFeaturedImageLeftdev }],
   ['ImageCarouselEditMode', { ...ImageCarouselEditModedev }],
   ['ImageCarouselDefault', { ...ImageCarouselDefaultdev }],
+  ['ImageCarouselContentPanel', { ...ImageCarouselContentPaneldev }],
   ['ImageCarousel', { ...ImageCarousel, componentType: 'client' }],
   ['nextImageSrc', { ...nextImageSrcdev }],
   ['ImageWrapper', { ...ImageWrapperdev, ...ImageWrapperclient }],
@@ -320,7 +330,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['IaNavIcons', { ...IaNavIcons }],
   ['IaLogo', { ...IaLogo }],
   ['IaHeaderLink', { ...IaHeaderLink, componentType: 'client' }],
-  ['ia-header', { ...iaheaderutils, ...iaheadertypes, ...iaheaderconstants }],
+  ['ia-header', { ...iaheaderutils, ...iaheadertypes }],
   ['GlobalHeaderDefault', { ...GlobalHeaderDefaultdev }],
   ['GlobalHeaderCentered', { ...GlobalHeaderCentereddev }],
   ['GlobalHeader', { ...GlobalHeader, componentType: 'client' }],
@@ -357,6 +367,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['ButtonComponent', { ...ButtonComponent }],
   ['Breadcrumbs', { ...Breadcrumbs }],
   ['BackgroundThumbnail', { ...BackgroundThumbnaildev }],
+  ['ArticleListing', { ...ArticleListing, componentType: 'client' }],
   ['ArticleHeader', { ...ArticleHeader, componentType: 'client' }],
   ['AnimatedSection', { ...AnimatedSectiondev }],
   ['AlertBanner', { ...AlertBannerdev }],

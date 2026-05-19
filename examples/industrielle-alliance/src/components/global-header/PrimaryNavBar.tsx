@@ -10,19 +10,16 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from '@/components/ui/navigation-menu';
-import { Default as ImageWrapper } from '@/components/image/ImageWrapper.dev';
-import { IaLogoDesktop } from './IaLogo';
+import { HeaderLogo } from './HeaderLogo';
 import { IaNavIcon } from './IaNavIcons';
 import { IaHeaderLink } from './IaHeaderLink';
 import type { IaHeaderSectionProps } from './ia-header.types';
-import { IA_HOME_HREF } from './ia-header.constants';
+import { IA_BRAND_BLUE, IA_HOME_HREF } from './ia-header.constants';
 import {
   getPrimaryNavIcon,
   hasDropdownChildren,
   resolvePrimaryLinks,
-  shouldUseIaInlineLogo,
 } from './ia-header.utils';
-import { IA_BRAND_BLUE } from './ia-header.constants';
 import type { PrimaryNavItemProps } from './global-header.props';
 
 function PrimaryNavItem({
@@ -115,9 +112,6 @@ export const PrimaryNavBar: React.FC<IaHeaderSectionProps> = ({
   page,
 }) => {
   const primaryLinks = resolvePrimaryLinks(primaryNavigationLinks);
-  const logoSrc = logo?.jsonValue?.value?.src;
-  const useCmsLogo =
-    !shouldUseIaInlineLogo(isPageEditing, logoSrc) && Boolean(logoSrc?.trim());
 
   return (
     <nav
@@ -125,26 +119,29 @@ export const PrimaryNavBar: React.FC<IaHeaderSectionProps> = ({
       className="border-border bg-background hidden border-b lg:block"
     >
       <div className="mx-auto flex h-[72px] max-w-screen-2xl items-center gap-6 px-4 lg:px-8">
-        <IaHeaderLink
-          href={IA_HOME_HREF}
-          title="Accueil"
-          className="inline-flex shrink-0 items-center"
-          isPageEditing={isPageEditing}
-        >
-          {useCmsLogo && logo?.jsonValue ? (
-            <div className="flex w-[200px] [&_.image-container]:w-full">
-              <ImageWrapper
-                image={logo.jsonValue}
-                className="h-[52px] w-full object-contain object-left"
-                sizes="200px"
-                alt="iA Groupe financier"
-                page={page}
-              />
-            </div>
-          ) : (
-            <IaLogoDesktop />
-          )}
-        </IaHeaderLink>
+        {isPageEditing ? (
+          <span className="inline-flex shrink-0 items-center">
+            <HeaderLogo
+              logo={logo}
+              isPageEditing={isPageEditing}
+              page={page}
+              variant="desktop"
+            />
+          </span>
+        ) : (
+          <IaHeaderLink
+            href={IA_HOME_HREF}
+            title="Accueil"
+            className="inline-flex shrink-0 items-center"
+          >
+            <HeaderLogo
+              logo={logo}
+              isPageEditing={isPageEditing}
+              page={page}
+              variant="desktop"
+            />
+          </IaHeaderLink>
+        )}
 
         <div className="flex flex-1 justify-end">
           <NavigationMenu className="max-w-none flex-none">

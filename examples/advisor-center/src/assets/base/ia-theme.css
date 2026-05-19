@@ -1,0 +1,37 @@
+/*
+  iA Financial Group design tokens (aligned with industrielle-alliance).
+  See DESIGN-TOKENS-IA.md in this starter.
+*/
+@theme {
+  /* Brand palette */
+  --color-background: hsl(0, 0%, 100%);
+  --color-foreground: hsl(209, 100%, 10%);
+  --color-card: hsl(0, 0%, 100%);
+  --color-card-foreground: hsl(209, 100%, 10%);
+  --color-primary: hsl(208, 100%, 35%);
+  --color-primary-foreground: hsl(0, 0%, 100%);
+  --color-primary-hover: hsl(208, 100%, 30%);
+  --color-secondary: hsl(209, 100%, 10%);
+  --color-secondary-foreground: hsl(0, 0%, 100%);
+  --color-secondary-hover: hsl(209, 55%, 18%);
+  --color-muted: hsl(210, 45%, 97%);
+  --color-muted-foreground: hsl(210, 14%, 41%);
+  --color-accent: hsl(208, 100%, 35%);
+  --color-accent-foreground: hsl(0, 0%, 100%);
+  --color-destructive: hsl(0, 72%, 51%);
+  --color-destructive-hover: hsl(0, 74%, 42%);
+  --color-destructive-foreground: hsl(0, 0%, 100%);
+  --color-border: hsl(210, 24%, 88%);
+  --color-input: hsl(210, 24%, 88%);
+  --color-ring: hsl(208, 100%, 35%);
+  --color-brand-blue: #064dd9;
+  --color-promo-band: #82c9f0;
+  --color-cta-blue: #0056d2;
+
+  --border-radius-default: 0.75rem;
+  --border-radius-lg: 1rem;
+  --border-radius-full: 624.9375rem;
+
+  --font-family-heading: var(--font-heading), ui-sans-serif, system-ui, sans-serif;
+  --font-family-body: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}

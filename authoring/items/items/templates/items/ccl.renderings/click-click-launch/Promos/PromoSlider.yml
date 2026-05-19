@@ -1,0 +1,87 @@
+---
+ID: "b8e4f1a2-3c5d-4e7f-9a1b-2d6e8f0a4c3b"
+Parent: "bb387a0f-4d26-470f-8523-850b3b2f0007"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/click-click-launch/Promos/PromoSlider"
+SharedFields:
+- ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
+  Hint: componentName
+  Value: PromoSlider
+- ID: "069a8361-b1cd-437c-8c32-a3be78941446"
+  Hint: Placeholders
+  Value: "{93D7BFAB-1C75-4F03-AED7-3AADE0B6F6AE}"
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/balloons.png
+- ID: "17bb046a-a32a-41b3-8315-81217947611b"
+  Hint: ComponentQuery
+  Value: |
+    query PromoSlider($datasource: String!, $language: String!) {
+      datasource: item(path: $datasource, language: $language) {
+        ... on MultiPromo {
+          title {
+            jsonValue
+          }
+          description {
+            jsonValue
+          }
+        }
+        children {
+          results {
+            ... on SimplePromo {
+              id
+              heading {
+                jsonValue
+              }
+              image {
+                jsonValue
+              }
+              link {
+                jsonValue
+              }
+              description {
+                jsonValue
+              }
+            }
+          }
+        }
+      }
+    }
+    
+- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
+  Hint: Datasource Template
+  Value: "/sitecore/templates/Branches/Project/click-click-launch/Components/Promos/MultiPromo"
+- ID: "7d8ae35f-9ed1-43b5-96a2-0a5f040d4e4e"
+  Hint: Open Properties after Add
+  Value: 0
+- ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
+  Hint: Parameters Template
+  Value: "{C18E61D8-FBDA-49F7-8251-29507CD4ECFC}"
+- ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
+  Hint: Datasource Location
+  Value: "query:$site/*[@@name='Data']/*[@@templatename='MultiPromo Folder']|query:$sharedSites/*[@@name='Data']/*[@@templatename='MultiPromo Folder']"
+- ID: "e829c217-5e94-4306-9c48-2634b094fdc2"
+  Hint: OtherProperties
+  Value: IsRenderingsWithDynamicPlaceholders=true
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "Promo Slider"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260519T120000Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "promo-slider-rendering-v1"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260519T120000Z

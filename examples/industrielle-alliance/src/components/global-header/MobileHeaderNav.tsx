@@ -5,8 +5,7 @@ import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
-import { Default as ImageWrapper } from '@/components/image/ImageWrapper.dev';
-import { IaLogoMobile } from './IaLogo';
+import { HeaderLogo } from './HeaderLogo';
 import { IaNavIcon } from './IaNavIcons';
 import { IaHeaderLink } from './IaHeaderLink';
 import type { IaHeaderSectionProps } from './ia-header.types';
@@ -20,8 +19,7 @@ import {
   getPrimaryNavIcon,
   isUtilityLinkSelected,
   resolvePrimaryLinks,
-  resolveUtilityLinks,
-  shouldUseIaInlineLogo,
+  resolveUtilityLinks
 } from './ia-header.utils';
 
 export const MobileHeaderNav: React.FC<IaHeaderSectionProps> = ({
@@ -37,26 +35,29 @@ export const MobileHeaderNav: React.FC<IaHeaderSectionProps> = ({
   const utilityLinks = resolveUtilityLinks(utilityNavigationLinks);
   const primaryLinks = resolvePrimaryLinks(primaryNavigationLinks);
   const loginField = headerContact?.jsonValue ?? IA_DEFAULT_HEADER_CONTACT;
-  const logoSrc = logo?.jsonValue?.value?.src;
-  const useCmsLogo =
-    !shouldUseIaInlineLogo(isPageEditing, logoSrc) && Boolean(logoSrc?.trim());
 
   return (
     <nav aria-label="Navigation mobile" className="border-border bg-background border-b lg:hidden">
       <div className="flex h-14 items-center justify-between gap-2 px-4">
-        <IaHeaderLink href={IA_HOME_HREF} title="Accueil" className="inline-flex shrink-0">
-          {useCmsLogo && logo?.jsonValue ? (
-            <ImageWrapper
-              image={logo.jsonValue}
-              className="h-9 w-auto object-contain"
-              sizes="149px"
-              alt="iA Groupe financier"
+        {isPageEditing ? (
+          <span className="inline-flex shrink-0">
+            <HeaderLogo
+              logo={logo}
+              isPageEditing={isPageEditing}
               page={page}
+              variant="mobile"
             />
-          ) : (
-            <IaLogoMobile />
-          )}
-        </IaHeaderLink>
+          </span>
+        ) : (
+          <IaHeaderLink href={IA_HOME_HREF} title="Accueil" className="inline-flex shrink-0">
+            <HeaderLogo
+              logo={logo}
+              isPageEditing={isPageEditing}
+              page={page}
+              variant="mobile"
+            />
+          </IaHeaderLink>
+        )}
 
         <div className="flex items-center gap-1">
           <button

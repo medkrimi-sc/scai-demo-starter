@@ -51,16 +51,16 @@ export function getPrimaryNavIcon(
   return PRIMARY_NAV_ICON_SEQUENCE[index % PRIMARY_NAV_ICON_SEQUENCE.length];
 }
 
-/** Use inline iA SVG unless authors are editing with a configured logo field. */
+/** Use inline iA SVG in preview/live when CMS logo is empty or a non-iA placeholder asset. */
 export function shouldUseIaInlineLogo(
   isPageEditing?: boolean,
   logoSrc?: string,
 ): boolean {
-  if (!logoSrc?.trim()) {
-    return true;
-  }
   if (isPageEditing) {
     return false;
+  }
+  if (!logoSrc?.trim()) {
+    return true;
   }
   const normalized = logoSrc.toLowerCase();
   const isIaAsset =

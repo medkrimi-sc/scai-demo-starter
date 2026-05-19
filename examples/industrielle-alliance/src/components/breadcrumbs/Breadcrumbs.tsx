@@ -1,3 +1,4 @@
+import type React from 'react';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -13,6 +14,7 @@ import { LinkFieldValue } from '@sitecore-content-sdk/nextjs';
 import { generateBreadcrumbListSchema } from '@/lib/structured-data/schema';
 import { getBaseUrl } from '@/lib/utils';
 import { StructuredData } from '@/components/structured-data/StructuredData';
+import { cn } from '@/lib/utils';
 
 type BreadcrumbsProps = ComponentProps & BreadcrumbsData;
 
@@ -34,76 +36,106 @@ type BreadcrumbsPage = {
   url?: LinkFieldValue;
 };
 
-export const Default: React.FC<BreadcrumbsProps> = (props) => {
-  const { fields } = props;
+const truncate = (str: string): string => {
+  return str?.length > 25 ? str.replace(/(.{24})..+/, '$1').trim().concat('...') : str;
+};
+
+function BreadcrumbsList({
+  ancestors,
+  name,
+  linkClassName,
+}: {
+  ancestors?: BreadcrumbsPage[];
+  name: string;
+  linkClassName?: string;
+}) {
+  return (
+    <Breadcrumb>
+      <BreadcrumbList>
+        {ancestors?.map((ancestor: BreadcrumbsPage, index) => {
+          const title =
+            ancestor.navigationTitle?.jsonValue.value || ancestor.title?.jsonValue.value;
+
+          return (
+            <span key={index} className="contents">
+              <BreadcrumbItem>
+                <BreadcrumbLink href={ancestor.url?.href || ''} className={linkClassName}>
+                  {title}
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+            </span>
+          );
+        })}
+        <BreadcrumbItem>
+          <BreadcrumbPage className={linkClassName}>{truncate(name)}</BreadcrumbPage>
+        </BreadcrumbItem>
+      </BreadcrumbList>
+    </Breadcrumb>
+  );
+}
+
+function BreadcrumbsContent({
+  fields,
+  className,
+  linkClassName,
+}: BreadcrumbsProps & { className?: string; linkClassName?: string }) {
   const { ancestors, name } = fields?.data?.datasource ?? {};
 
-  const truncate = (str: string): string => {
-    return str?.length > 25
-      ? str
-          .replace(/(.{24})..+/, '$1')
-          .trim()
-          .concat('...')
-      : str;
-  };
-
-  // Generate BreadcrumbList schema
   const breadcrumbItems = [
     ...(ancestors?.map((ancestor) => ({
-      name: (ancestor.navigationTitle?.jsonValue.value || ancestor.title?.jsonValue.value) as string,
+      name: (ancestor.navigationTitle?.jsonValue.value ||
+        ancestor.title?.jsonValue.value) as string,
       url: ancestor.url?.href ? `${getBaseUrl()}${ancestor.url.href}` : undefined,
     })) || []),
-    { name, url: undefined }, // Current page
+    { name, url: undefined },
   ];
 
   const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbItems);
 
-  if (fields) {
-    if (ancestors) {
-      return (
-        <>
-          {/* BreadcrumbList structured data */}
-          <StructuredData id="breadcrumb-schema" data={breadcrumbSchema} />
-          
-          <Breadcrumb>
-            <BreadcrumbList>
-              {ancestors?.map((ancestor: BreadcrumbsPage, index) => {
-                const title =
-                  ancestor.navigationTitle?.jsonValue.value || ancestor.title?.jsonValue.value;
+  if (!fields) {
+    return <NoDataFallback componentName="Breadcrumbs" />;
+  }
 
-                return (
-                  <>
-                    <BreadcrumbItem key={index}>
-                      <BreadcrumbLink href={ancestor.url?.href || ''}>{title}</BreadcrumbLink>
-                    </BreadcrumbItem>
-                    <BreadcrumbSeparator />
-                  </>
-                );
-              })}
-              <BreadcrumbItem>
-                <BreadcrumbPage>{truncate(name)}</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
-        </>
-      );
-    }
-
-    //if no ancestors
-    const homeBreadcrumbSchema = generateBreadcrumbListSchema([{ name: 'Home', url: getBaseUrl() }]);
+  if (ancestors) {
     return (
-      <>
-        <StructuredData id="breadcrumb-schema-home" data={homeBreadcrumbSchema} />
-        <Breadcrumb>
-          <BreadcrumbList>
-            <BreadcrumbItem>
-              <BreadcrumbLink href="/">Home</BreadcrumbLink>
-            </BreadcrumbItem>
-          </BreadcrumbList>
-        </Breadcrumb>
-      </>
+      <div className={className} data-component="Breadcrumbs">
+        <StructuredData id="breadcrumb-schema" data={breadcrumbSchema} />
+        <BreadcrumbsList ancestors={ancestors} name={name} linkClassName={linkClassName} />
+      </div>
     );
   }
 
-  return <NoDataFallback componentName="Breadcrumbs" />;
+  const homeBreadcrumbSchema = generateBreadcrumbListSchema([
+    { name: 'Home', url: getBaseUrl() },
+  ]);
+
+  return (
+    <div className={className} data-component="Breadcrumbs">
+      <StructuredData id="breadcrumb-schema-home" data={homeBreadcrumbSchema} />
+      <Breadcrumb>
+        <BreadcrumbList>
+          <BreadcrumbItem>
+            <BreadcrumbLink href="/" className={linkClassName}>
+              Home
+            </BreadcrumbLink>
+          </BreadcrumbItem>
+        </BreadcrumbList>
+      </Breadcrumb>
+    </div>
+  );
+}
+
+export const Default: React.FC<BreadcrumbsProps> = (props) => {
+  return <BreadcrumbsContent {...props} />;
+};
+
+export const IaAdvice: React.FC<BreadcrumbsProps> = (props) => {
+  return (
+    <BreadcrumbsContent
+      {...props}
+      className={cn('mx-auto max-w-3xl px-5 pt-6 sm:px-8', props.params?.styles)}
+      linkClassName="text-sm font-medium hover:underline [&_a]:text-[#1558d6] [&_span]:text-[#1558d6]"
+    />
+  );
 };

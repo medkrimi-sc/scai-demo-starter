@@ -1,0 +1,51 @@
+/* iA Advice Zone article body prose */
+.ia-article-prose {
+  color: #001a33;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.ia-article-prose > p:first-child {
+  font-weight: 700;
+}
+
+.ia-article-prose h2,
+.ia-article-prose h3 {
+  color: #001a33;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.ia-article-prose h2 {
+  font-size: 1.375rem;
+}
+
+.ia-article-prose h3 {
+  font-size: 1.125rem;
+}
+
+.ia-article-prose a {
+  color: #1558d6;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.ia-article-prose a:hover {
+  opacity: 0.9;
+}
+
+.ia-article-prose ul {
+  list-style-type: disc;
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.ia-article-prose li {
+  margin-bottom: 0.5rem;
+}
+
+.ia-article-prose p {
+  margin-bottom: 1rem;
+}

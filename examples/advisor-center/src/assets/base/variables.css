@@ -1,0 +1,70 @@
+@import './ia-theme.css';
+
+/*
+  Legacy SXA / basic-nextjs token names mapped to iA brand values.
+  Component CSS under src/assets/components/ continues to use these names.
+*/
+@theme {
+  --font-roboto: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+
+  --color-main-color: var(--color-foreground);
+
+  /* Backgrounds */
+  --color-bg-basic-color: var(--color-background);
+  --color-bg-light-gray: var(--color-muted);
+  --color-bg-lighter-gray: hsl(210, 45%, 98%);
+  --color-bg-light-gray-active: hsl(210, 24%, 88%);
+  --color-bg-blue: var(--color-brand-blue);
+  --color-bg-blue-active: var(--color-primary-hover);
+  --color-bg-black: var(--color-secondary);
+  --color-bg-black-active: var(--color-secondary-hover);
+  --color-page-bg-editor: none;
+  --color-bg-dark-gray: var(--color-secondary);
+  --color-bg-submenu: var(--color-muted);
+  --color-bg-submenu-active: hsl(210, 30%, 92%);
+
+  /* Text */
+  --color-text-white: var(--color-primary-foreground);
+  --color-text-heading-color: var(--color-foreground);
+  --color-text-basic: var(--color-muted-foreground);
+  --color-text-basic-active: var(--color-foreground);
+  --color-text-blue: var(--color-brand-blue);
+  --color-text-blue-active: var(--color-primary);
+  --color-text-red: var(--color-primary);
+
+  /* Borders */
+  --color-border-gray: var(--color-border);
+  --color-border-basic-color: var(--color-brand-blue);
+
+  /* Buttons */
+  --color-btn-green-light: var(--color-primary);
+  --color-btn-green: var(--color-primary-hover);
+  --color-btn-red-active: var(--color-destructive-hover);
+  --color-btn-red: var(--color-destructive);
+
+  /* Other */
+  --color-promo-bg-hero: hsl(209, 100%, 10% / 0.65);
+  --color-menu-hover-color: var(--color-brand-blue);
+  --color-menu-active-color: var(--color-primary-hover);
+  --color-highlight-accent: var(--color-brand-blue);
+
+  /* Font sizes (unchanged scale) */
+  --text-font-small: 11px;
+  --text-font-normal: 13px;
+  --text-font-medium: 16px;
+  --text-font-big: 20px;
+  --text-font-extrabig: 24px;
+  --text-navigation-font-basic: 18px;
+  --text-navigation-font-basic-submenu: 14px;
+
+  /* Breakpoints */
+  --breakpoint-mobile: 380px;
+  --breakpoint-mobile-horizontal: 640px;
+  --breakpoint-mobile-large: 992px;
+  --breakpoint-desktop: 1024px;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1400px;
+}

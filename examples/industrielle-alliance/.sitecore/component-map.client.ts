@@ -27,6 +27,7 @@ import * as SubmissionFormCentereddev from 'src/components/submission-form/Submi
 import * as SubmissionForm from 'src/components/submission-form/SubmissionForm';
 import * as SlideCarouseldev from 'src/components/slide-carousel/SlideCarousel.dev';
 import * as SecondaryNavigation from 'src/components/secondary-navigation/SecondaryNavigation';
+import * as PromoSlider from 'src/components/promo-slider/PromoSlider';
 import * as PromoImage from 'src/components/promo-image/PromoImage';
 import * as PromoAnimatedImageRightdev from 'src/components/promo-animated/PromoAnimatedImageRight.dev';
 import * as PromoAnimatedDefaultdev from 'src/components/promo-animated/PromoAnimatedDefault.dev';
@@ -65,11 +66,15 @@ import * as ImageGallerydev from 'src/components/image-gallery/ImageGallery.dev'
 import * as ImageGallery from 'src/components/image-gallery/ImageGallery';
 import * as ImageCarouselThumbnailsdev from 'src/components/image-carousel/ImageCarouselThumbnails.dev';
 import * as ImageCarouselPreviewBelowdev from 'src/components/image-carousel/ImageCarouselPreviewBelow.dev';
+import * as ImageCarouselPagination from 'src/components/image-carousel/ImageCarouselPagination';
 import * as ImageCarouselLeftRightPreviewdev from 'src/components/image-carousel/ImageCarouselLeftRightPreview.dev';
+import * as ImageCarouselImagePanedev from 'src/components/image-carousel/ImageCarouselImagePane.dev';
+import * as ImageCarouselIaBanddev from 'src/components/image-carousel/ImageCarouselIaBand.dev';
 import * as ImageCarouselFullBleeddev from 'src/components/image-carousel/ImageCarouselFullBleed.dev';
 import * as ImageCarouselFeaturedImageLeftdev from 'src/components/image-carousel/ImageCarouselFeaturedImageLeft.dev';
 import * as ImageCarouselEditModedev from 'src/components/image-carousel/ImageCarouselEditMode.dev';
 import * as ImageCarouselDefaultdev from 'src/components/image-carousel/ImageCarouselDefault.dev';
+import * as ImageCarouselContentPaneldev from 'src/components/image-carousel/ImageCarouselContentPanel.dev';
 import * as ImageCarousel from 'src/components/image-carousel/ImageCarousel';
 import * as ImageWrapperclient from 'src/components/image/ImageWrapper.client';
 import * as Icon from 'src/components/icon/Icon';
@@ -101,6 +106,7 @@ import * as EmailSignupFormdev from 'src/components/forms/email/EmailSignupForm.
 import * as floatingdockdev from 'src/components/floating-dock/floating-dock.dev';
 import * as Carousel from 'src/components/carousel/Carousel';
 import * as cardspotlightdev from 'src/components/card-spotlight/card-spotlight.dev';
+import * as ArticleListing from 'src/components/article-listing/ArticleListing';
 import * as ArticleHeader from 'src/components/article-header/ArticleHeader';
 import * as AnimatedSectiondev from 'src/components/animated-section/AnimatedSection.dev';
 import * as AlertBannerdev from 'src/components/alert-banner/AlertBanner.dev';
@@ -137,6 +143,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['SubmissionForm', { ...SubmissionForm }],
   ['SlideCarousel', { ...SlideCarouseldev }],
   ['SecondaryNavigation', { ...SecondaryNavigation }],
+  ['PromoSlider', { ...PromoSlider }],
   ['PromoImage', { ...PromoImage }],
   ['PromoAnimatedImageRight', { ...PromoAnimatedImageRightdev }],
   ['PromoAnimatedDefault', { ...PromoAnimatedDefaultdev }],
@@ -174,11 +181,15 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['ImageGallery', { ...ImageGallerydev, ...ImageGallery }],
   ['ImageCarouselThumbnails', { ...ImageCarouselThumbnailsdev }],
   ['ImageCarouselPreviewBelow', { ...ImageCarouselPreviewBelowdev }],
+  ['ImageCarouselPagination', { ...ImageCarouselPagination }],
   ['ImageCarouselLeftRightPreview', { ...ImageCarouselLeftRightPreviewdev }],
+  ['ImageCarouselImagePane', { ...ImageCarouselImagePanedev }],
+  ['ImageCarouselIaBand', { ...ImageCarouselIaBanddev }],
   ['ImageCarouselFullBleed', { ...ImageCarouselFullBleeddev }],
   ['ImageCarouselFeaturedImageLeft', { ...ImageCarouselFeaturedImageLeftdev }],
   ['ImageCarouselEditMode', { ...ImageCarouselEditModedev }],
   ['ImageCarouselDefault', { ...ImageCarouselDefaultdev }],
+  ['ImageCarouselContentPanel', { ...ImageCarouselContentPaneldev }],
   ['ImageCarousel', { ...ImageCarousel }],
   ['ImageWrapper', { ...ImageWrapperclient }],
   ['Icon', { ...Icon }],
@@ -209,6 +220,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['floating-dock', { ...floatingdockdev }],
   ['Carousel', { ...Carousel }],
   ['card-spotlight', { ...cardspotlightdev }],
+  ['ArticleListing', { ...ArticleListing }],
   ['ArticleHeader', { ...ArticleHeader }],
   ['AnimatedSection', { ...AnimatedSectiondev }],
   ['AlertBanner', { ...AlertBannerdev }],

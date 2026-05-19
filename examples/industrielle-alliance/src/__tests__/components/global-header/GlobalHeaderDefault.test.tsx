@@ -31,6 +31,10 @@ jest.mock('@sitecore-content-sdk/nextjs', () => ({
     const linkField = field as { value?: { text?: string; href?: string } };
     return <a href={linkField?.value?.href}>{linkField?.value?.text}</a>;
   },
+  Image: () => <img data-testid="sitecore-image" alt="editable logo" />,
+  useSitecore: () => ({
+    page: { mode: { isEditing: false, isPreview: false, isDesignLibrary: false } },
+  }),
 }));
 
 jest.mock('@/components/ui/navigation-menu', () => ({
@@ -101,6 +105,28 @@ describe('GlobalHeaderDefault Component', () => {
   it('exposes mobile menu sheet content', () => {
     render(<GlobalHeaderDefault {...mockGlobalHeaderProps} />);
     expect(screen.getByTestId('mobile-sheet-content')).toBeInTheDocument();
+  });
+
+  it('renders CMS logo field chrome in Page Builder mode', () => {
+    const { container } = render(
+      <GlobalHeaderDefault
+        {...mockGlobalHeaderProps}
+        isPageEditing
+        fields={{
+          ...mockGlobalHeaderProps.fields,
+          data: {
+            item: {
+              ...mockGlobalHeaderProps.fields.data.item,
+              logo: { jsonValue: { value: {} } },
+            },
+          },
+        }}
+      />,
+    );
+
+    expect(container.querySelectorAll('[data-field="headerLogo"]').length).toBe(2);
+    expect(screen.getAllByTestId('image-wrapper').length).toBeGreaterThan(0);
+    expect(container.querySelector('svg[viewBox="0 0 232.08 124.05"]')).not.toBeInTheDocument();
   });
 });
 
