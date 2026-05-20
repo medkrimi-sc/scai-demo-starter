@@ -3,7 +3,16 @@ import type { PrimaryNavItemProps, UtilityNavigationItemProps } from './global-h
 
 export const IA_BRAND_BLUE = '#064dd9';
 
+/** Recommended CMS logo asset size (matches ia.ca header proportions). */
+export const IA_HEADER_LOGO_DIMENSIONS = {
+  desktop: { width: 200, height: 52, sizes: '200px' },
+  mobile: { width: 149, height: 36, sizes: '149px' },
+} as const;
+
 export const IA_HOME_HREF = 'https://ia.ca/particuliers';
+
+/** Site search results page (Home/Search item). */
+export const IA_SEARCH_HREF = '/search';
 
 export const IA_HEADER_PHONE = {
   href: 'tel:1-800-463-6236',

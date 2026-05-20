@@ -27,6 +27,27 @@ import * as SubmissionFormCentereddev from 'src/components/submission-form/Submi
 import * as SubmissionForm from 'src/components/submission-form/SubmissionForm';
 import * as SlideCarouseldev from 'src/components/slide-carousel/SlideCarousel.dev';
 import * as SecondaryNavigation from 'src/components/secondary-navigation/SecondaryNavigation';
+import * as SearchExperienceLoadMore from 'src/components/search-experience/SearchExperience.LoadMore';
+import * as SearchExperience from 'src/components/search-experience/SearchExperience';
+import * as useSearchField from 'src/components/search-experience/search-components/useSearchField';
+import * as useRouter from 'src/components/search-experience/search-components/useRouter';
+import * as useParams from 'src/components/search-experience/search-components/useParams';
+import * as useEvent from 'src/components/search-experience/search-components/useEvent';
+import * as useDebounce from 'src/components/search-experience/search-components/useDebounce';
+import * as SearchSkeletonItem from 'src/components/search-experience/search-components/SearchSkeletonItem';
+import * as SearchPagination from 'src/components/search-experience/search-components/SearchPagination';
+import * as SearchItemCommon from 'src/components/search-experience/search-components/SearchItemCommon';
+import * as SearchInput from 'src/components/search-experience/search-components/SearchInput';
+import * as SearchError from 'src/components/search-experience/search-components/SearchError';
+import * as SearchEmptyResults from 'src/components/search-experience/search-components/SearchEmptyResults';
+import * as SearchItemTitle from 'src/components/search-experience/search-components/SearchItem/SearchItemTitle';
+import * as SearchItemTags from 'src/components/search-experience/search-components/SearchItem/SearchItemTags';
+import * as SearchItemSummary from 'src/components/search-experience/search-components/SearchItem/SearchItemSummary';
+import * as SearchItemSubTitle from 'src/components/search-experience/search-components/SearchItem/SearchItemSubTitle';
+import * as SearchItemLink from 'src/components/search-experience/search-components/SearchItem/SearchItemLink';
+import * as SearchItemImage from 'src/components/search-experience/search-components/SearchItem/SearchItemImage';
+import * as SearchItemCategory from 'src/components/search-experience/search-components/SearchItem/SearchItemCategory';
+import * as index from 'src/components/search-experience/search-components/SearchItem/index';
 import * as PromoSlider from 'src/components/promo-slider/PromoSlider';
 import * as PromoImage from 'src/components/promo-image/PromoImage';
 import * as PromoAnimatedImageRightdev from 'src/components/promo-animated/PromoAnimatedImageRight.dev';
@@ -88,6 +109,7 @@ import * as Hero from 'src/components/hero/Hero';
 import * as SecondaryNavBar from 'src/components/global-header/SecondaryNavBar';
 import * as PrimaryNavBar from 'src/components/global-header/PrimaryNavBar';
 import * as MobileHeaderNav from 'src/components/global-header/MobileHeaderNav';
+import * as IaSearchBox from 'src/components/global-header/IaSearchBox';
 import * as IaHeaderLink from 'src/components/global-header/IaHeaderLink';
 import * as GlobalHeaderDefaultdev from 'src/components/global-header/GlobalHeaderDefault.dev';
 import * as GlobalHeaderCentereddev from 'src/components/global-header/GlobalHeaderCentered.dev';
@@ -143,6 +165,26 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['SubmissionForm', { ...SubmissionForm }],
   ['SlideCarousel', { ...SlideCarouseldev }],
   ['SecondaryNavigation', { ...SecondaryNavigation }],
+  ['SearchExperience', { ...SearchExperienceLoadMore, ...SearchExperience }],
+  ['useSearchField', { ...useSearchField }],
+  ['useRouter', { ...useRouter }],
+  ['useParams', { ...useParams }],
+  ['useEvent', { ...useEvent }],
+  ['useDebounce', { ...useDebounce }],
+  ['SearchSkeletonItem', { ...SearchSkeletonItem }],
+  ['SearchPagination', { ...SearchPagination }],
+  ['SearchItemCommon', { ...SearchItemCommon }],
+  ['SearchInput', { ...SearchInput }],
+  ['SearchError', { ...SearchError }],
+  ['SearchEmptyResults', { ...SearchEmptyResults }],
+  ['SearchItemTitle', { ...SearchItemTitle }],
+  ['SearchItemTags', { ...SearchItemTags }],
+  ['SearchItemSummary', { ...SearchItemSummary }],
+  ['SearchItemSubTitle', { ...SearchItemSubTitle }],
+  ['SearchItemLink', { ...SearchItemLink }],
+  ['SearchItemImage', { ...SearchItemImage }],
+  ['SearchItemCategory', { ...SearchItemCategory }],
+  ['index', { ...index }],
   ['PromoSlider', { ...PromoSlider }],
   ['PromoImage', { ...PromoImage }],
   ['PromoAnimatedImageRight', { ...PromoAnimatedImageRightdev }],
@@ -203,6 +245,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['SecondaryNavBar', { ...SecondaryNavBar }],
   ['PrimaryNavBar', { ...PrimaryNavBar }],
   ['MobileHeaderNav', { ...MobileHeaderNav }],
+  ['IaSearchBox', { ...IaSearchBox }],
   ['IaHeaderLink', { ...IaHeaderLink }],
   ['GlobalHeaderDefault', { ...GlobalHeaderDefaultdev }],
   ['GlobalHeaderCentered', { ...GlobalHeaderCentereddev }],

@@ -15,6 +15,7 @@ import {
   IA_HOME_HREF,
   IA_LANGUAGE_LINK,
 } from './ia-header.constants';
+import { IaSearchBox } from './IaSearchBox';
 import {
   getPrimaryNavIcon,
   isUtilityLinkSelected,
@@ -28,7 +29,6 @@ export const MobileHeaderNav: React.FC<IaHeaderSectionProps> = ({
   primaryNavigationLinks,
   headerContact,
   logo,
-  page,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname() ?? '/';
@@ -41,33 +41,16 @@ export const MobileHeaderNav: React.FC<IaHeaderSectionProps> = ({
       <div className="flex h-14 items-center justify-between gap-2 px-4">
         {isPageEditing ? (
           <span className="inline-flex shrink-0">
-            <HeaderLogo
-              logo={logo}
-              isPageEditing={isPageEditing}
-              page={page}
-              variant="mobile"
-            />
+            <HeaderLogo logo={logo} isPageEditing={isPageEditing} variant="mobile" />
           </span>
         ) : (
           <IaHeaderLink href={IA_HOME_HREF} title="Accueil" className="inline-flex shrink-0">
-            <HeaderLogo
-              logo={logo}
-              isPageEditing={isPageEditing}
-              page={page}
-              variant="mobile"
-            />
+            <HeaderLogo logo={logo} isPageEditing={isPageEditing} variant="mobile" />
           </IaHeaderLink>
         )}
 
         <div className="flex items-center gap-1">
-          <button
-            type="button"
-            title="Rechercher"
-            aria-label="Rechercher"
-            className="text-primary inline-flex p-2"
-          >
-            <IaNavIcon name="search" size={24} />
-          </button>
+          <IaSearchBox variant="mobile" />
 
           <IaHeaderLink
             field={loginField}

@@ -17,9 +17,41 @@ Use this as a guide when assembling pages in **Experience Editor** (placeholders
 
 ---
 
+## Sitecore serialization (push to CM)
+
+From the **repository root**, against your **dev** CM environment:
+
+```powershell
+dotnet sitecore env set-default -n dev
+dotnet sitecore ser push -i "Project.click-click-launch"
+dotnet sitecore ser push -i "Project.industrielle-alliance"
+```
+
+This deploys:
+
+- **Branch** `IA Add Advice Zone Listing` (CCL) — new **Advice Zone listing** pages (template `9b575283`) with Breadcrumbs `IaAdvice` + **ArticleListing** `AdviceZone` + `local:/Data/Article Listing`. **Insert only under Home.**
+- **Branch** `IA Add Article Page` (CCL) — new article pages with Breadcrumbs `IaAdvice` → Article Header `IaAdvice` → Rich Text `IaArticle` under `local:/Data/`.
+- **Page designs** — `Article` for **Article Page** template; **Advice Zone Listing** for the Advice Zone folder template.
+- **Headless variants** — `Breadcrumbs/IaAdvice`, `ArticleHeader/IaAdvice`, `RichText/IaArticle`, `ArticleListing/AdviceZone`.
+- **Advice Zone** page layout — listing with **ArticleListing** `AdviceZone` and featured articles.
+- Sample articles under **Advice Zone** with the IA article layout.
+
+### Insert options — simple IA model
+
+| Location | Create menu | Purpose |
+|----------|-------------|---------|
+| **Home** | Standard pages only (Landing, Detail, Folder, Product) | No advice articles here |
+| **Advice Zone** | **Advice article** | New article with layout pre-wired |
+
+Branches are under **Industrielle Alliance**, not Solterra. Page template **Advice Zone Page** is serialized at `Site/Advice Zone Page` (required for the listing branch).
+
+See [CONTENT_AUTHORING.md](./CONTENT_AUTHORING.md) for authors.
+
+---
+
 ## Advice Zone — article listing page
 
-Use **Article Page** items (branch: `Add Article Page`) and compose a listing page in `headless-main`:
+The **Advice Zone** item is pre-composed in serialization. To build manually in `headless-main`:
 
 | Order | Component | Variant | Notes |
 |------|-----------|---------|-------|
@@ -27,7 +59,7 @@ Use **Article Page** items (branch: `Add Article Page`) and compose a listing pa
 | 2 | **ArticleListing** | `AdviceZone` | Section title + description + **Featured Content** (multilist of Article pages) + view-all link. Cards: image, optional tag from `pageShortTitle`, title, read time. |
 | 3 | *(optional)* **RichTextBlock** | `Default` | Intro copy above the grid if needed. |
 
-**Datasource (Article Listing):** `titleOptional`, `descriptionOptional`, `linkOptional` (e.g. “Découvrir nos conseils →”), `featuredContent` → Article pages with `pageTitle`, `pageSummary`, `pageThumbnail`, `pageReadTime`, `pageShortTitle`.
+**Datasource (Article Listing):** Create or pick items under **`/sitecore/content/.../Data/Article Listing Folder`** (template **Article Listing Folder**), then add **Article Listing** children (template **Article Listing** — same as Solterra). Page-level datasources use **`local:/Data/Article Listing`** on the page (see Advice Zone). Fields: `titleOptional`, `descriptionOptional`, `linkOptional`, `featuredContent` (multilist of Article Page items).
 
 For homepage promo-style 3-up (non-article datasource), keep **MultiPromo** → `StaticGrid` (row 6 above).
 

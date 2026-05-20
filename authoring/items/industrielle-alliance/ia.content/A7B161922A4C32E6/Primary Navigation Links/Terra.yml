@@ -38,15 +38,15 @@ Languages:
         sitecore\mohamed.krimi@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "5507f547-7c48-4a12-954f-8581f79bb854"
+      Value: "30b49ea5-5025-4e84-acf8-41d07fa120de"
     - ID: "969b132e-3dc2-4526-8f8d-61e3ea742df6"
       Hint: link
       Value: |
-        <link class="" querystring="" id="{E99E9772-169D-4953-A8CE-125AF397AC72}" anchor="" target="" title="" linktype="internal" text="Wealth Management" url="/industrielle-alliance/industrielle-alliance/Home/Products/Wealth Management" />
+        <link class="" id="{E99E9772-169D-4953-A8CE-125AF397AC72}" querystring="" anchor="" target="" title="" linktype="internal" text="Wealth Management" url="/industrielle-alliance/industrielle-alliance/Home/Services/Wealth Management" />
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\yuri.yampolsky@sitecore.com
+        sitecore\mohamed.krimi@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260519T221555Z
+      Value: 20260520T123835Z

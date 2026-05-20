@@ -12,6 +12,7 @@ import {
   IA_HEADER_PHONE,
   IA_LANGUAGE_LINK,
 } from './ia-header.constants';
+import { IaSearchBox } from './IaSearchBox';
 import { isUtilityLinkSelected, resolveUtilityLinks } from './ia-header.utils';
 
 export const SecondaryNavBar: React.FC<IaHeaderSectionProps> = ({
@@ -65,15 +66,7 @@ export const SecondaryNavBar: React.FC<IaHeaderSectionProps> = ({
 
         <ul className="m-0 flex list-none items-center gap-1 p-0">
           <li>
-            <button
-              type="button"
-              title="Rechercher"
-              aria-label="Rechercher"
-              aria-expanded={false}
-              className="text-secondary-foreground inline-flex items-center justify-center rounded-sm p-2 hover:bg-white/10"
-            >
-              <IaNavIcon name="search" size={24} color="currentColor" />
-            </button>
+            <IaSearchBox variant="desktop" />
           </li>
           <li>
             <IaHeaderLink

@@ -44,9 +44,13 @@ SharedFields:
     {FC274B80-2EF2-4B05-89D4-22FCB1E9CC9C}
     {D890160D-BD57-42EF-9FBD-F9666F385004}
     {EF1A7041-E3AD-49CC-B2EB-CE7CA1C67A2F}
+    {0FC71E1E-EA6E-49E9-94BF-2F748F628610}
+    {07F00DDD-994C-4584-9256-CFD11152307D}
+    {DD6C6E80-1458-4276-B753-001691C8841C}
+    {F6952169-D48B-4612-9C31-AC13CAC54C61}
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "5a48bc6b-b8ba-4c3a-8d96-c4eeb4e49804"
+  Value: "e91bd2d7-6789-47cd-b143-3cd35e665f1a"
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
   Value: "{8D43D425-5618-4BB3-99A8-4EAC62BBF3D0}"
@@ -71,11 +75,11 @@ Languages:
         sitecore\mohamed.krimi@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "93e23c5c-87cf-4fff-9406-7bfd447dcaaf"
+      Value: "d44d025d-ae76-4726-9b83-3624c06949cd"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\mohamed.krimi@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260514T163001Z
+      Value: 20260519T230539Z

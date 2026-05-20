@@ -38,15 +38,15 @@ Languages:
         sitecore\mohamed.krimi@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "8829a5ce-e869-4562-800a-e6afd1c88365"
+      Value: "2d0a8871-7840-4beb-b75a-a2327d75cf0c"
     - ID: "969b132e-3dc2-4526-8f8d-61e3ea742df6"
       Hint: link
       Value: |
-        <link class="" querystring="" id="{A4E8676C-1AE7-4A03-A7E4-F97180554C51}" anchor="" target="" title="Alaris Nexa detail page" linktype="internal" text="Saving and retirement" url="/industrielle-alliance/industrielle-alliance/Home/Products/Savings and retirement" />
+        <link class="" id="{A4E8676C-1AE7-4A03-A7E4-F97180554C51}" querystring="" anchor="" target="" title="Alaris Nexa detail page" linktype="internal" text="Saving and retirement" url="/industrielle-alliance/industrielle-alliance/Home/Services/Savings and retirement" />
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\yuri.yampolsky@sitecore.com
+        sitecore\mohamed.krimi@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260519T221555Z
+      Value: 20260520T123834Z

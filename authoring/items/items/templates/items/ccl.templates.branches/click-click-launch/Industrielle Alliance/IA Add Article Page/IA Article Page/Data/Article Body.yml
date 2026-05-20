@@ -1,0 +1,23 @@
+---
+ID: "e5a6b7c8-a9b0-4123-e456-789012345006"
+Parent: "e3f4a5b6-e7f8-4901-c234-567890123003"
+Template: "58041043-7bea-44f0-b1b8-08e4ea7054f4"
+Path: "/sitecore/templates/Branches/Project/click-click-launch/Industrielle Alliance/IA Add Article Page/IA Article Page/Data/Article Body"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260520T120000Z
+    - ID: "8b57dadd-0825-4f5d-9c32-187c0af7e1fd"
+      Hint: text
+      Value: |
+        <div class="ck-content"><p><strong>Lead paragraph for your article.</strong></p><p>Add your article body content here. Use headings, lists, and links as needed.</p></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ia-article-body-ds-001"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260520T120000Z

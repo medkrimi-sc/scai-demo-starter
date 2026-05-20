@@ -1,0 +1,85 @@
+﻿---
+ID: "cf14a6b9-46a9-4786-ab09-00672a91ba2b"
+Parent: "b394b203-8be5-4e71-bdc7-0ceeb6b92c57"
+Template: "0a7aa373-5ed1-4e9b-9678-22d3c5faf6df"
+Path: "/sitecore/content/industrielle-alliance/industrielle-alliance/Home/Data/Text 3"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260519T232734Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: |
+        <div class="ck-content"><section style="color:#002b4f;font-family:Arial,Helvetica,sans-serif;margin:0 auto;max-width:1180px;padding:80px 36px 90px;"><h2 style="font-size:40px;letter-spacing:-0.5px;line-height:1.15;margin:0 0 56px;"><strong>Ready to take action?</strong></h2><ul style="list-style:none;margin-bottom:72px;margin-right:0;margin-top:0;padding:0;"><li style="border-bottom:1px solid #d1d8df;position:relative;"><p style="margin-left:0;"><a style="color:#0052e0;display:block;font-size:24px;line-height:1.2;padding:28px 90px 28px 0;position:relative;text-decoration:none;" href="#"><strong>Calculate your needs</strong>&nbsp;<span style="background-color:#0052e0;"><span style="border-radius:50%;display:block;height:56px;margin-top:-28px;position:absolute;right:0;text-align:center;top:50%;width:56px;"><strong><svg style="fill:#ffffff;margin-top:15px;" xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" width="26" height="26">
+                                            <path d="M647-440H200q-17 0-28.5-11.5T160-480q0-17 11.5-28.5T200-520h447L451-716q-12-12-11.5-28t12.5-28q12-11 28-11.5t28 11.5l264 264q6 6 8.5 13t2.5 15q0 8-2.5 15t-8.5 13L508-188q-11 11-27.5 11T452-188q-12-12-12-28.5t12-28.5l195-195Z"></path>
+                                        </svg>&nbsp;</strong></span></span></a></p></li><li style="border-bottom:1px solid #d1d8df;position:relative;"><p style="margin-left:0;"><a style="color:#0052e0;display:block;font-size:24px;line-height:1.2;padding:28px 90px 28px 0;position:relative;text-decoration:none;" href="#"><strong>Speak to an advisor</strong>&nbsp;<span style="background-color:#0052e0;"><span style="border-radius:50%;display:block;height:56px;margin-top:-28px;position:absolute;right:0;text-align:center;top:50%;width:56px;"><strong><svg style="fill:#ffffff;margin-top:15px;" xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" width="26" height="26">
+                                            <path d="M647-440H200q-17 0-28.5-11.5T160-480q0-17 11.5-28.5T200-520h447L451-716q-12-12-11.5-28t12.5-28q12-11 28-11.5t28 11.5l264 264q6 6 8.5 13t2.5 15q0 8-2.5 15t-8.5 13L508-188q-11 11-27.5 11T452-188q-12-12-12-28.5t12-28.5l195-195Z"></path>
+                                        </svg>&nbsp;</strong></span></span></a></p></li><li style="position:relative;"><p style="margin-left:0;"><a style="color:#0052e0;display:block;font-size:24px;line-height:1.2;padding:28px 90px 28px 0;position:relative;text-decoration:none;" href="#"><strong>Get a quote or apply online</strong>&nbsp;<span style="background-color:#0052e0;"><span style="border-radius:50%;display:block;height:56px;margin-top:-28px;position:absolute;right:0;text-align:center;top:50%;width:56px;"><strong><svg style="fill:#ffffff;margin-top:15px;" xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" width="26" height="26">
+                                            <path d="M647-440H200q-17 0-28.5-11.5T160-480q0-17 11.5-28.5T200-520h447L451-716q-12-12-11.5-28t12.5-28q12-11 28-11.5t28 11.5l264 264q6 6 8.5 13t2.5 15q0 8-2.5 15t-8.5 13L508-188q-11 11-27.5 11T452-188q-12-12-12-28.5t12-28.5l195-195Z"></path>
+                                        </svg>&nbsp;</strong></span></span></a></p></li></ul><div style="background-color:#dff2ff;border-radius:0 88px 0 0;box-sizing:border-box;min-height:340px;overflow:hidden;padding:62px 36px 40px;position:relative;"><div style="max-width:610px;position:relative;z-index:2;"><h3 style="color:#002b4f;font-size:32px;line-height:1.15;margin:0 0 34px;"><strong>I am already a client</strong></h3><p style="color:#002b4f;font-size:16px;line-height:1.2;margin:0 0 34px;"><strong>Manage your insurance and savings with ease: claims, investment management, policy tracking, updating your information, and much more. Everything is accessible anytime, directly from your client portal.&nbsp;</strong></p><div style="align-items:center;display:flex;gap:18px;"><a style="align-items:center;background-color:#0052e0;border-radius:999px;border:2px solid #0052e0;box-sizing:border-box;color:#fff;display:flex;font-size:16px;height:54px;justify-content:center;text-decoration:none;width:170px;" href="#"><strong>Sign in</strong> </a><a style="align-items:center;background-color:transparent;border-radius:999px;border:2px solid #0052e0;box-sizing:border-box;color:#0052e0;display:flex;font-size:16px;height:54px;justify-content:center;text-decoration:none;width:260px;" href="#"><strong>Submit a claim</strong> </a><a style="align-items:center;background-color:transparent;border-radius:999px;border:2px solid #0052e0;box-sizing:border-box;color:#0052e0;display:flex;font-size:16px;height:54px;justify-content:center;text-decoration:none;width:150px;" href="#"><strong>More</strong> <span style="font-size:18px;line-height:1;margin-left:12px;"><strong>⌄</strong>&nbsp;</span></a></div></div><p><img class="image_resized" style="bottom:-4px;max-width:42%;position:absolute;right:25px;width:420px;z-index:1;" src="https://ia.ca/_next/image?url=https%3A%2F%2Ffiles.ia.ca%2F-%2Fmedia%2Ffiles%2Fheadless%2Fsites%2Fia%2Findividuals%2Fcontent%2Fimg%2Fcloud_illustrations_rotated.png&amp;w=1080&amp;q=75" alt="" /></p></div></section></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9d15058b-2d97-484f-8b4e-e76198fa4686"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260519T234747Z
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260519T232734Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: |
+        <div class="ck-content"><section style="color:#002b4f;font-family:Arial,Helvetica,sans-serif;margin:0 auto;max-width:1180px;padding:80px 36px 90px;"><h2 style="font-size:40px;letter-spacing:-0.5px;line-height:1.15;margin:0 0 56px;"><strong>Prêt à passer à l'action?</strong></h2><ul style="list-style:none;margin-bottom:72px;margin-right:0;margin-top:0;padding:0;"><li style="border-bottom:1px solid #d1d8df;position:relative;"><p style="margin-left:0;"><a style="color:#0052e0;display:block;font-size:24px;line-height:1.2;padding:28px 90px 28px 0;position:relative;text-decoration:none;" href="#"><strong>Calculez vos besoins</strong>&nbsp;<span style="background-color:#0052e0;"><span style="border-radius:50%;display:block;height:56px;margin-top:-28px;position:absolute;right:0;text-align:center;top:50%;width:56px;"><strong><svg style="fill:#ffffff;margin-top:15px;" xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" width="26" height="26">
+                                            <path d="M647-440H200q-17 0-28.5-11.5T160-480q0-17 11.5-28.5T200-520h447L451-716q-12-12-11.5-28t12.5-28q12-11 28-11.5t28 11.5l264 264q6 6 8.5 13t2.5 15q0 8-2.5 15t-8.5 13L508-188q-11 11-27.5 11T452-188q-12-12-12-28.5t12-28.5l195-195Z"></path>
+                                        </svg>&nbsp;</strong></span></span></a></p></li><li style="border-bottom:1px solid #d1d8df;position:relative;"><p style="margin-left:0;"><a style="color:#0052e0;display:block;font-size:24px;line-height:1.2;padding:28px 90px 28px 0;position:relative;text-decoration:none;" href="#"><strong>Parlez à un conseiller</strong>&nbsp;<span style="background-color:#0052e0;"><span style="border-radius:50%;display:block;height:56px;margin-top:-28px;position:absolute;right:0;text-align:center;top:50%;width:56px;"><strong><svg style="fill:#ffffff;margin-top:15px;" xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" width="26" height="26">
+                                            <path d="M647-440H200q-17 0-28.5-11.5T160-480q0-17 11.5-28.5T200-520h447L451-716q-12-12-11.5-28t12.5-28q12-11 28-11.5t28 11.5l264 264q6 6 8.5 13t2.5 15q0 8-2.5 15t-8.5 13L508-188q-11 11-27.5 11T452-188q-12-12-12-28.5t12-28.5l195-195Z"></path>
+                                        </svg>&nbsp;</strong></span></span></a></p></li><li style="position:relative;"><p style="margin-left:0;"><a style="color:#0052e0;display:block;font-size:24px;line-height:1.2;padding:28px 90px 28px 0;position:relative;text-decoration:none;" href="#"><strong>Obtenez une soumission ou appliquez en ligne</strong>&nbsp;<span style="background-color:#0052e0;"><span style="border-radius:50%;display:block;height:56px;margin-top:-28px;position:absolute;right:0;text-align:center;top:50%;width:56px;"><strong><svg style="fill:#ffffff;margin-top:15px;" xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" width="26" height="26">
+                                            <path d="M647-440H200q-17 0-28.5-11.5T160-480q0-17 11.5-28.5T200-520h447L451-716q-12-12-11.5-28t12.5-28q12-11 28-11.5t28 11.5l264 264q6 6 8.5 13t2.5 15q0 8-2.5 15t-8.5 13L508-188q-11 11-27.5 11T452-188q-12-12-12-28.5t12-28.5l195-195Z"></path>
+                                        </svg>&nbsp;</strong></span></span></a></p></li></ul><div style="background-color:#dff2ff;border-radius:0 88px 0 0;box-sizing:border-box;min-height:340px;overflow:hidden;padding:62px 36px 40px;position:relative;"><div style="max-width:610px;position:relative;z-index:2;"><h3 style="color:#002b4f;font-size:32px;line-height:1.15;margin:0 0 34px;"><strong>Je suis déjà client</strong></h3><p style="color:#002b4f;font-size:16px;line-height:1.2;margin:0 0 34px;"><strong>Gérez vos assurances et vos épargnes en toute simplicité : réclamations, gestion des investissements, suivi des polices, mise à jour de vos informations et bien plus encore. Tout est accessible à tout moment, directement depuis votre portail client.&nbsp;</strong></p><div style="align-items:center;display:flex;gap:18px;"><a style="align-items:center;background-color:#0052e0;border-radius:999px;border:2px solid #0052e0;box-sizing:border-box;color:#fff;display:flex;font-size:16px;height:54px;justify-content:center;text-decoration:none;width:170px;" href="#"><strong>Se connecter</strong> </a><a style="align-items:center;background-color:transparent;border-radius:999px;border:2px solid #0052e0;box-sizing:border-box;color:#0052e0;display:flex;font-size:16px;height:54px;justify-content:center;text-decoration:none;width:260px;" href="#"><strong>Soumettre une réclamation</strong> </a><a style="align-items:center;background-color:transparent;border-radius:999px;border:2px solid #0052e0;box-sizing:border-box;color:#0052e0;display:flex;font-size:16px;height:54px;justify-content:center;text-decoration:none;width:150px;" href="#"><strong>Plus</strong> <span style="font-size:18px;line-height:1;margin-left:12px;"><strong>⌄</strong>&nbsp;</span></a></div></div><p><img class="image_resized" style="bottom:-4px;max-width:42%;position:absolute;right:25px;width:420px;z-index:1;" src="https://ia.ca/_next/image?url=https%3A%2F%2Ffiles.ia.ca%2F-%2Fmedia%2Ffiles%2Fheadless%2Fsites%2Fia%2Findividuals%2Fcontent%2Fimg%2Fcloud_illustrations_rotated.png&amp;w=1080&amp;q=75" alt="" /></p></div></section></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f3c06db2-a24e-4feb-8e4d-08b59907ba7c"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260520T101016Z

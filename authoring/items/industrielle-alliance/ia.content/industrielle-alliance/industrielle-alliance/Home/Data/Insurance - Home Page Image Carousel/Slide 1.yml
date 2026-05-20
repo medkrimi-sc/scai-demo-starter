@@ -1,0 +1,107 @@
+﻿---
+ID: "b35f14c9-4298-45de-9be9-818bec97e113"
+Parent: "3f53d1ff-762b-4a24-a926-84779e779dc9"
+Template: "03ba85aa-ad3e-412b-b6c3-0c2af639b49f"
+Path: "/sitecore/content/industrielle-alliance/industrielle-alliance/Home/Data/Insurance - Home Page Image Carousel/Slide 1"
+BranchID: "9ba623cf-080b-4074-9a36-e54550ca4d13"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{A053ED9F-4099-4682-9411-2B4C98E481E4}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "17df1240-92c7-47b5-b29c-099a18695d06"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{436E9A9F-6D03-4DA1-B63E-55571E8649A4}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260514T162824Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{12FFAC4C-565F-4C9A-B63E-7F77E96B4D1F}"
+    - ID: "4d806366-a3b0-460d-b84f-87383453372e"
+      Hint: image
+      Value: |
+        <image mediaid="18f4e0fc-6525-40a9-a526-b797778a4d86" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "58b4e062-1aab-4b9a-aff9-3e60f941a03e"
+      Hint: backgroundText
+      Value: Average savings of $565
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c37c6a75-b869-44d3-8809-5a1901d5a935"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260520T123832Z
+    - ID: "f4e44a85-84c1-4f40-957d-49732e92706b"
+      Hint: link
+      Value: |
+        <link class="" querystring="" id="{6CCF5A5D-02A2-4568-AD45-B5B792380016}" anchor="" target="" title="Explore All Models" linktype="internal" text="Get a quote" url="/industrielle-alliance/industrielle-alliance/Home/Services/Insurance" />
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260514T162824Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{12FFAC4C-565F-4C9A-B63E-7F77E96B4D1F}"
+    - ID: "4d806366-a3b0-460d-b84f-87383453372e"
+      Hint: image
+      Value: |
+        <image mediaid="40db44da-daf1-45b0-a8b4-fe5c0e04770b" alt="carrousel_rembimpot_tennis" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "58b4e062-1aab-4b9a-aff9-3e60f941a03e"
+      Hint: backgroundText
+      Value: Des économies à votre service
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3ec4ff25-710d-48ec-afa5-3e73d7d8ceba"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260520T123832Z
+    - ID: "f4e44a85-84c1-4f40-957d-49732e92706b"
+      Hint: link
+      Value: |
+        <link class="" id="{6CCF5A5D-02A2-4568-AD45-B5B792380016}" querystring="" anchor="" target="" title="Explorez tous les modèles" linktype="internal" text="En savoir plus" url="/industrielle-alliance/industrielle-alliance/Home/Services/Insurance" />

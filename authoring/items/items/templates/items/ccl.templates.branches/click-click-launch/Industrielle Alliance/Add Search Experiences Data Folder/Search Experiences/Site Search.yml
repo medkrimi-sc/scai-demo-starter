@@ -1,0 +1,23 @@
+---
+ID: "c1a2b3c4-d5e6-4789-a012-345678901612"
+Parent: "c1a2b3c4-d5e6-4789-a012-345678901611"
+Template: "5a3d7aa7-0cb1-468a-9c8d-7bc02d6f110b"
+Path: "/sitecore/templates/Branches/Project/click-click-launch/Industrielle Alliance/Add Search Experiences Data Folder/Search Experiences/Site Search"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260520T140000Z
+    - ID: "55323273-a15d-4405-9a31-27abe188bcd8"
+      Hint: search
+      Value: |
+        {"searchIndex":"","fieldsMapping":{"title":"Title","description":"Description","link":"Url","images":"Image","type":"Category"}}
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ia-branch-site-search-ds-001"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260520T140000Z

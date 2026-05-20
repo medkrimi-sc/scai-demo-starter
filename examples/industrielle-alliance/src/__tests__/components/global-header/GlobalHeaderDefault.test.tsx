@@ -125,7 +125,7 @@ describe('GlobalHeaderDefault Component', () => {
     );
 
     expect(container.querySelectorAll('[data-field="headerLogo"]').length).toBe(2);
-    expect(screen.getAllByTestId('image-wrapper').length).toBeGreaterThan(0);
+    expect(screen.getAllByTestId('sitecore-image').length).toBe(2);
     expect(container.querySelector('svg[viewBox="0 0 232.08 124.05"]')).not.toBeInTheDocument();
   });
 });

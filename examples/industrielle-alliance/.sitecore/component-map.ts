@@ -44,6 +44,29 @@ import * as StructuredData from 'src/components/structured-data/StructuredData';
 import * as SlideCarouseldev from 'src/components/slide-carousel/SlideCarousel.dev';
 import * as SiteMetadata from 'src/components/site-metadata/SiteMetadata';
 import * as SecondaryNavigation from 'src/components/secondary-navigation/SecondaryNavigation';
+import * as SearchExperienceLoadMore from 'src/components/search-experience/SearchExperience.LoadMore';
+import * as SearchExperience from 'src/components/search-experience/SearchExperience';
+import * as useSearchField from 'src/components/search-experience/search-components/useSearchField';
+import * as useRouter from 'src/components/search-experience/search-components/useRouter';
+import * as useParams from 'src/components/search-experience/search-components/useParams';
+import * as useEvent from 'src/components/search-experience/search-components/useEvent';
+import * as useDebounce from 'src/components/search-experience/search-components/useDebounce';
+import * as SearchSkeletonItem from 'src/components/search-experience/search-components/SearchSkeletonItem';
+import * as SearchPagination from 'src/components/search-experience/search-components/SearchPagination';
+import * as SearchItemCommon from 'src/components/search-experience/search-components/SearchItemCommon';
+import * as SearchInput from 'src/components/search-experience/search-components/SearchInput';
+import * as SearchError from 'src/components/search-experience/search-components/SearchError';
+import * as SearchEmptyResults from 'src/components/search-experience/search-components/SearchEmptyResults';
+import * as models from 'src/components/search-experience/search-components/models';
+import * as constants from 'src/components/search-experience/search-components/constants';
+import * as SearchItemTitle from 'src/components/search-experience/search-components/SearchItem/SearchItemTitle';
+import * as SearchItemTags from 'src/components/search-experience/search-components/SearchItem/SearchItemTags';
+import * as SearchItemSummary from 'src/components/search-experience/search-components/SearchItem/SearchItemSummary';
+import * as SearchItemSubTitle from 'src/components/search-experience/search-components/SearchItem/SearchItemSubTitle';
+import * as SearchItemLink from 'src/components/search-experience/search-components/SearchItem/SearchItemLink';
+import * as SearchItemImage from 'src/components/search-experience/search-components/SearchItem/SearchItemImage';
+import * as SearchItemCategory from 'src/components/search-experience/search-components/SearchItem/SearchItemCategory';
+import * as index from 'src/components/search-experience/search-components/SearchItem/index';
 import * as RichTextBlock from 'src/components/rich-text-block/RichTextBlock';
 import * as PromoSlider from 'src/components/promo-slider/PromoSlider';
 import * as PromoImageTitlePartialOverlaydev from 'src/components/promo-image/PromoImageTitlePartialOverlay.dev';
@@ -137,6 +160,7 @@ import * as Hero from 'src/components/hero/Hero';
 import * as SecondaryNavBar from 'src/components/global-header/SecondaryNavBar';
 import * as PrimaryNavBar from 'src/components/global-header/PrimaryNavBar';
 import * as MobileHeaderNav from 'src/components/global-header/MobileHeaderNav';
+import * as IaSearchBox from 'src/components/global-header/IaSearchBox';
 import * as IaNavIcons from 'src/components/global-header/IaNavIcons';
 import * as IaLogo from 'src/components/global-header/IaLogo';
 import * as IaHeaderLink from 'src/components/global-header/IaHeaderLink';
@@ -236,6 +260,28 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['SlideCarousel', { ...SlideCarouseldev }],
   ['SiteMetadata', { ...SiteMetadata }],
   ['SecondaryNavigation', { ...SecondaryNavigation, componentType: 'client' }],
+  ['SearchExperience', { ...SearchExperienceLoadMore, ...SearchExperience, componentType: 'client' }],
+  ['useSearchField', { ...useSearchField, componentType: 'client' }],
+  ['useRouter', { ...useRouter, componentType: 'client' }],
+  ['useParams', { ...useParams, componentType: 'client' }],
+  ['useEvent', { ...useEvent, componentType: 'client' }],
+  ['useDebounce', { ...useDebounce, componentType: 'client' }],
+  ['SearchSkeletonItem', { ...SearchSkeletonItem, componentType: 'client' }],
+  ['SearchPagination', { ...SearchPagination, componentType: 'client' }],
+  ['SearchItemCommon', { ...SearchItemCommon, componentType: 'client' }],
+  ['SearchInput', { ...SearchInput, componentType: 'client' }],
+  ['SearchError', { ...SearchError, componentType: 'client' }],
+  ['SearchEmptyResults', { ...SearchEmptyResults, componentType: 'client' }],
+  ['models', { ...models }],
+  ['constants', { ...constants }],
+  ['SearchItemTitle', { ...SearchItemTitle, componentType: 'client' }],
+  ['SearchItemTags', { ...SearchItemTags, componentType: 'client' }],
+  ['SearchItemSummary', { ...SearchItemSummary, componentType: 'client' }],
+  ['SearchItemSubTitle', { ...SearchItemSubTitle, componentType: 'client' }],
+  ['SearchItemLink', { ...SearchItemLink, componentType: 'client' }],
+  ['SearchItemImage', { ...SearchItemImage, componentType: 'client' }],
+  ['SearchItemCategory', { ...SearchItemCategory, componentType: 'client' }],
+  ['index', { ...index, componentType: 'client' }],
   ['RichTextBlock', { ...RichTextBlock }],
   ['PromoSlider', { ...PromoSlider, componentType: 'client' }],
   ['PromoImageTitlePartialOverlay', { ...PromoImageTitlePartialOverlaydev }],
@@ -327,6 +373,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['SecondaryNavBar', { ...SecondaryNavBar, componentType: 'client' }],
   ['PrimaryNavBar', { ...PrimaryNavBar, componentType: 'client' }],
   ['MobileHeaderNav', { ...MobileHeaderNav, componentType: 'client' }],
+  ['IaSearchBox', { ...IaSearchBox, componentType: 'client' }],
   ['IaNavIcons', { ...IaNavIcons }],
   ['IaLogo', { ...IaLogo }],
   ['IaHeaderLink', { ...IaHeaderLink, componentType: 'client' }],

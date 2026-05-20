@@ -109,7 +109,6 @@ export const PrimaryNavBar: React.FC<IaHeaderSectionProps> = ({
   isPageEditing,
   primaryNavigationLinks,
   logo,
-  page,
 }) => {
   const primaryLinks = resolvePrimaryLinks(primaryNavigationLinks);
 
@@ -121,12 +120,7 @@ export const PrimaryNavBar: React.FC<IaHeaderSectionProps> = ({
       <div className="mx-auto flex h-[72px] max-w-screen-2xl items-center gap-6 px-4 lg:px-8">
         {isPageEditing ? (
           <span className="inline-flex shrink-0 items-center">
-            <HeaderLogo
-              logo={logo}
-              isPageEditing={isPageEditing}
-              page={page}
-              variant="desktop"
-            />
+            <HeaderLogo logo={logo} isPageEditing={isPageEditing} variant="desktop" />
           </span>
         ) : (
           <IaHeaderLink
@@ -134,12 +128,7 @@ export const PrimaryNavBar: React.FC<IaHeaderSectionProps> = ({
             title="Accueil"
             className="inline-flex shrink-0 items-center"
           >
-            <HeaderLogo
-              logo={logo}
-              isPageEditing={isPageEditing}
-              page={page}
-              variant="desktop"
-            />
+            <HeaderLogo logo={logo} isPageEditing={isPageEditing} variant="desktop" />
           </IaHeaderLink>
         )}
 

@@ -1,0 +1,19 @@
+---
+ID: "d1e2f3a4-b5c6-4789-a012-345678901701"
+Parent: "71d0ba29-576d-4e18-8542-5b8da4db8074"
+Template: "ddec7923-74b5-4c0c-86a6-04f551123581"
+Path: "/sitecore/content/industrielle-alliance/industrielle-alliance/Data/Search Experiences"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260520T140000Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ia-data-search-experiences-folder-001"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260520T140000Z

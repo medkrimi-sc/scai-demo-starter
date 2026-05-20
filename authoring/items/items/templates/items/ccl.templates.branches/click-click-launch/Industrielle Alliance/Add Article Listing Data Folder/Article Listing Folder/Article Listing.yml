@@ -1,0 +1,25 @@
+---
+ID: "a1b2c3d4-e5f6-4789-a012-3456789abcdf"
+Parent: "a0b1c2d3-e4f5-4678-9012-3456789abcde"
+Template: "705c014a-ced4-409a-89b7-09350cc98116"
+Path: "/sitecore/templates/Branches/Project/click-click-launch/Industrielle Alliance/Add Article Listing Data Folder/Article Listing Folder/Article Listing"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260520T130000Z
+    - ID: "4d116c64-41a2-4c2b-857a-c268c13b8a72"
+      Hint: descriptionOptional
+      Value: Practical tips and expert advice to help you protect what matters most.
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ia-branch-article-listing-ds-001"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260520T130000Z
+    - ID: "f173626a-12e7-4c9a-97ca-9866fd814c86"
+      Hint: titleOptional
+      Value: Latest articles

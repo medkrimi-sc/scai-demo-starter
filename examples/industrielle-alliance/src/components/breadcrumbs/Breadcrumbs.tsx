@@ -44,14 +44,16 @@ function BreadcrumbsList({
   ancestors,
   name,
   linkClassName,
+  listClassName,
 }: {
   ancestors?: BreadcrumbsPage[];
   name: string;
   linkClassName?: string;
+  listClassName?: string;
 }) {
   return (
     <Breadcrumb>
-      <BreadcrumbList>
+      <BreadcrumbList className={listClassName}>
         {ancestors?.map((ancestor: BreadcrumbsPage, index) => {
           const title =
             ancestor.navigationTitle?.jsonValue.value || ancestor.title?.jsonValue.value;
@@ -79,7 +81,8 @@ function BreadcrumbsContent({
   fields,
   className,
   linkClassName,
-}: BreadcrumbsProps & { className?: string; linkClassName?: string }) {
+  listClassName,
+}: BreadcrumbsProps & { className?: string; linkClassName?: string; listClassName?: string }) {
   const { ancestors, name } = fields?.data?.datasource ?? {};
 
   const breadcrumbItems = [
@@ -101,7 +104,12 @@ function BreadcrumbsContent({
     return (
       <div className={className} data-component="Breadcrumbs">
         <StructuredData id="breadcrumb-schema" data={breadcrumbSchema} />
-        <BreadcrumbsList ancestors={ancestors} name={name} linkClassName={linkClassName} />
+        <BreadcrumbsList
+          ancestors={ancestors}
+          name={name}
+          linkClassName={linkClassName}
+          listClassName={listClassName}
+        />
       </div>
     );
   }
@@ -130,12 +138,18 @@ export const Default: React.FC<BreadcrumbsProps> = (props) => {
   return <BreadcrumbsContent {...props} />;
 };
 
+const IA_BREADCRUMB_TEXT = 'text-[#064dd9]';
+
 export const IaAdvice: React.FC<BreadcrumbsProps> = (props) => {
   return (
     <BreadcrumbsContent
       {...props}
       className={cn('mx-auto max-w-3xl px-5 pt-6 sm:px-8', props.params?.styles)}
-      linkClassName="text-sm font-medium hover:underline [&_a]:text-[#1558d6] [&_span]:text-[#1558d6]"
+      listClassName={IA_BREADCRUMB_TEXT}
+      linkClassName={cn(
+        'text-sm font-medium hover:underline hover:text-[#064dd9]',
+        IA_BREADCRUMB_TEXT,
+      )}
     />
   );
 };

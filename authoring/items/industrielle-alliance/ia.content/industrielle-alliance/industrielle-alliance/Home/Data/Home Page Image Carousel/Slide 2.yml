@@ -22,6 +22,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20260514T162825Z
@@ -31,29 +34,74 @@ Languages:
     - ID: "4d806366-a3b0-460d-b84f-87383453372e"
       Hint: image
       Value: |
-        <image mediaid="82e079b0-949d-41ee-9459-f550e9ebfe00" />
+        <image mediaid="d4c257e9-9764-4349-9cd7-4b5c8cfc6c1c" />
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
         sitecore\Admin
     - ID: "58b4e062-1aab-4b9a-aff9-3e60f941a03e"
       Hint: backgroundText
-      Value: Aero
+      Value: Wealth transfer
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\mohamed.krimi@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "a5896cf7-57a7-4c5e-8fe5-4770d83aa8a6"
+      Value: "c24af7c3-114c-440f-a1d3-e6a6fbfcc425"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\yuri.yampolsky@sitecore.com
+        sitecore\mohamed.krimi@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260519T221555Z
+      Value: 20260520T123833Z
     - ID: "f4e44a85-84c1-4f40-957d-49732e92706b"
       Hint: link
       Value: |
-        <link class="" querystring="" id="{A4E8676C-1AE7-4A03-A7E4-F97180554C51}" anchor="" target="" title="Explore All Models" linktype="internal" text="Explore All Models" url="/industrielle-alliance/industrielle-alliance/Home/Products/Savings and retirement" />
+        <link class="" querystring="" id="{A4E8676C-1AE7-4A03-A7E4-F97180554C51}" anchor="" target="" title="Explore All Models" linktype="internal" text="Learn more" url="/industrielle-alliance/industrielle-alliance/Home/Services/Savings and retirement" />
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260514T162825Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{4460E76C-87E9-4859-9DE6-DE122774937F}"
+    - ID: "4d806366-a3b0-460d-b84f-87383453372e"
+      Hint: image
+      Value: |
+        <image mediaid="d4c257e9-9764-4349-9cd7-4b5c8cfc6c1c" alt="carroussel_transfert_patrimoine" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "58b4e062-1aab-4b9a-aff9-3e60f941a03e"
+      Hint: backgroundText
+      Value: Transfert de patrimoine
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f5741907-33d7-443c-a2f8-0668e9ef2b68"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260520T123833Z
+    - ID: "f4e44a85-84c1-4f40-957d-49732e92706b"
+      Hint: link
+      Value: |
+        <link class="" id="{A4E8676C-1AE7-4A03-A7E4-F97180554C51}" querystring="" anchor="" target="" title="Explorez tous les modèles" linktype="internal" text="En savoir plus" url="/industrielle-alliance/industrielle-alliance/Home/Services/Savings and retirement" />

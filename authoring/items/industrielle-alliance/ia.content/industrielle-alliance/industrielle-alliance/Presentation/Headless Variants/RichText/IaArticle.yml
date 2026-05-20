@@ -1,0 +1,19 @@
+---
+ID: "f7a8b9c0-c1d2-4345-a678-901234567007"
+Parent: "ca02aea9-e807-4b63-90a5-1ed55e0daffc"
+Template: "4d50cdae-c2d9-4de8-b080-8f992bfb1b55"
+Path: "/sitecore/content/industrielle-alliance/industrielle-alliance/Presentation/Headless Variants/RichText/IaArticle"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260520T120000Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ia-richtext-iaarticle-variant-001"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260520T120000Z
