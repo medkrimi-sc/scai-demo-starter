@@ -2,6 +2,7 @@
 
 import type React from 'react';
 import { usePathname } from 'next/navigation';
+import { useIsClient } from '@/hooks/use-is-client';
 import { cn } from '@/lib/utils';
 import { IaNavIcon } from './IaNavIcons';
 import { IaHeaderLink } from './IaHeaderLink';
@@ -21,6 +22,7 @@ export const SecondaryNavBar: React.FC<IaHeaderSectionProps> = ({
   headerContact,
 }) => {
   const pathname = usePathname() ?? '/';
+  const isClient = useIsClient();
   const utilityLinks = resolveUtilityLinks(utilityNavigationLinks);
   const loginField = headerContact?.jsonValue ?? IA_DEFAULT_HEADER_CONTACT;
 
@@ -34,7 +36,7 @@ export const SecondaryNavBar: React.FC<IaHeaderSectionProps> = ({
           {utilityLinks.map((item, index) => {
             const field = item.link?.jsonValue;
             const href = field?.value?.href;
-            const isSelected = isUtilityLinkSelected(href, pathname);
+            const isSelected = isClient && isUtilityLinkSelected(href, pathname);
 
             return (
               <li key={`${field?.value?.text ?? index}-${index}`}>

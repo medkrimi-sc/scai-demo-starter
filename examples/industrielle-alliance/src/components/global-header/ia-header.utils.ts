@@ -51,6 +51,19 @@ export function getPrimaryNavIcon(
   return PRIMARY_NAV_ICON_SEQUENCE[index % PRIMARY_NAV_ICON_SEQUENCE.length];
 }
 
+/** True when the URL points at an iA-branded media item (safe to render from CMS). */
+export function isIaBrandedLogoSrc(logoSrc?: string): boolean {
+  if (!logoSrc?.trim()) {
+    return false;
+  }
+  const normalized = logoSrc.toLowerCase();
+  return (
+    normalized.includes('ia') ||
+    normalized.includes('industrielle') ||
+    normalized.includes('groupe-financier')
+  );
+}
+
 /** Use inline iA SVG in preview/live when CMS logo is empty or a non-iA placeholder asset. */
 export function shouldUseIaInlineLogo(
   isPageEditing?: boolean,
@@ -62,12 +75,7 @@ export function shouldUseIaInlineLogo(
   if (!logoSrc?.trim()) {
     return true;
   }
-  const normalized = logoSrc.toLowerCase();
-  const isIaAsset =
-    normalized.includes('ia') ||
-    normalized.includes('industrielle') ||
-    normalized.includes('groupe-financier');
-  return isIaAsset;
+  return !isIaBrandedLogoSrc(logoSrc);
 }
 
 export function resolveUtilityLinks(

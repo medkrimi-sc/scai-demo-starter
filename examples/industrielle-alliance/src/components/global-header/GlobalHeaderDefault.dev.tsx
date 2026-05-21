@@ -9,12 +9,18 @@ import { MobileHeaderNav } from './MobileHeaderNav';
 
 export const GlobalHeaderDefault: React.FC<GlobalHeaderProps> = (props) => {
   const { fields, isPageEditing } = props ?? {};
+  const headerData = fields?.data as
+    | GlobalHeaderProps['fields']['data']
+    | { datasource?: GlobalHeaderProps['fields']['data']['item'] }
+    | undefined;
+  const headerItem = headerData?.item ?? headerData?.datasource;
+
   const {
     logo,
     primaryNavigationLinks,
     headerContact,
     utilityNavigationLinks,
-  } = fields?.data?.item ?? {};
+  } = headerItem ?? {};
 
   const sectionProps = {
     isPageEditing,
@@ -37,9 +43,9 @@ export const GlobalHeaderDefault: React.FC<GlobalHeaderProps> = (props) => {
         Passer au contenu
       </a>
 
-      <SecondaryNavBar {...sectionProps} />
-      <PrimaryNavBar {...sectionProps} />
-      <MobileHeaderNav {...sectionProps} />
+      <SecondaryNavBar key="ia-header-secondary" {...sectionProps} />
+      <PrimaryNavBar key="ia-header-primary" {...sectionProps} />
+      <MobileHeaderNav key="ia-header-mobile" {...sectionProps} />
     </header>
   );
 };

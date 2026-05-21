@@ -211,7 +211,7 @@ export const GlobalHeaderCentered: React.FC<GlobalHeaderProps> = (props) => {
                           primaryNavigationLinks?.targetItems.map(
                             (item, index) => (
                               <m.div
-                                key={`${item.link?.jsonValue?.value?.text}-mobile`}
+                                key={`${item.link?.jsonValue?.value?.text ?? 'nav'}-mobile-${index}`}
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{

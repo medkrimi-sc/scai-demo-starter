@@ -1,7 +1,11 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { Default as Breadcrumbs } from '@/components/breadcrumbs/Breadcrumbs';
+import {
+  Default as Breadcrumbs,
+  getBreadcrumbLabel,
+  getVisibleAncestors,
+} from '@/components/breadcrumbs/Breadcrumbs';
 import { Page } from '@sitecore-content-sdk/nextjs';
 
 //  Mock NoDataFallback
@@ -118,6 +122,66 @@ describe('Breadcrumbs Component', () => {
     render(<Breadcrumbs {...mockPropsMissingFields} />);
     expect(screen.getByTestId('no-data')).toBeInTheDocument();
     expect(screen.getByText(/No data for Breadcrumbs/i)).toBeInTheDocument();
+  });
+
+  it('skips ancestors without a display label', () => {
+    render(
+      <Breadcrumbs
+        {...mockPropsWithAncestors}
+        fields={{
+          data: {
+            datasource: {
+              name: 'IA Article Page',
+              title: { jsonValue: { value: 'What to do if you have an accident' } },
+              navigationTitle: { jsonValue: { value: '' } },
+              ancestors: [
+                {
+                  name: 'sitecore',
+                  title: { jsonValue: { value: '' } },
+                  navigationTitle: { jsonValue: { value: '' } },
+                  url: { href: '/' },
+                },
+                {
+                  name: 'Home',
+                  title: { jsonValue: { value: 'Home' } },
+                  navigationTitle: { jsonValue: { value: '' } },
+                  url: { href: '/home' },
+                },
+                {
+                  name: 'Advice Zone',
+                  title: { jsonValue: { value: 'Advice Zone' } },
+                  navigationTitle: { jsonValue: { value: '' } },
+                  url: { href: '/advice-zone' },
+                },
+              ],
+            },
+          },
+        }}
+      />,
+    );
+
+    expect(screen.getByText('Home')).toBeInTheDocument();
+    expect(screen.getByText('Advice Zone')).toBeInTheDocument();
+    expect(screen.getByText(/What to do if you have/)).toBeInTheDocument();
+    expect(screen.queryByText('sitecore')).not.toBeInTheDocument();
+  });
+
+  it('getVisibleAncestors filters empty labels', () => {
+    const ancestors = getVisibleAncestors([
+      {
+        name: 'empty',
+        title: { jsonValue: { value: '' } },
+        navigationTitle: { jsonValue: { value: '' } },
+      },
+      {
+        name: 'Home',
+        title: { jsonValue: { value: 'Home' } },
+        navigationTitle: { jsonValue: { value: '' } },
+      },
+    ]);
+
+    expect(ancestors).toHaveLength(1);
+    expect(getBreadcrumbLabel(ancestors[0])).toBe('Home');
   });
 
   it('truncates long breadcrumb name correctly', () => {

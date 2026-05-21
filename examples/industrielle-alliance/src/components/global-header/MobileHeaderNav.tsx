@@ -3,6 +3,7 @@
 import type React from 'react';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
+import { useIsClient } from '@/hooks/use-is-client';
 import { cn } from '@/lib/utils';
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { HeaderLogo } from './HeaderLogo';
@@ -32,6 +33,7 @@ export const MobileHeaderNav: React.FC<IaHeaderSectionProps> = ({
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname() ?? '/';
+  const isClient = useIsClient();
   const utilityLinks = resolveUtilityLinks(utilityNavigationLinks);
   const primaryLinks = resolvePrimaryLinks(primaryNavigationLinks);
   const loginField = headerContact?.jsonValue ?? IA_DEFAULT_HEADER_CONTACT;
@@ -80,7 +82,7 @@ export const MobileHeaderNav: React.FC<IaHeaderSectionProps> = ({
                   {utilityLinks.map((item, index) => {
                     const field = item.link?.jsonValue;
                     const href = field?.value?.href;
-                    const isActive = isUtilityLinkSelected(href, pathname);
+                    const isActive = isClient && isUtilityLinkSelected(href, pathname);
 
                     return (
                       <li key={`utility-mobile-${index}`}>
@@ -134,7 +136,7 @@ export const MobileHeaderNav: React.FC<IaHeaderSectionProps> = ({
                             {item.children?.results?.map((child, childIndex) => {
                               const childField = child.link?.jsonValue;
                               return (
-                                <li key={`child-mobile-${childIndex}`}>
+                                <li key={`child-mobile-${index}-${childIndex}`}>
                                   <IaHeaderLink
                                     field={childField}
                                     isPageEditing={isPageEditing}

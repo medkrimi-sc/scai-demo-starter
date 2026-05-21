@@ -1,6 +1,6 @@
 import { ContainerFullBleedProps } from '@/components/container/container-full-bleed/container-full-bleed.props';
 import { Flex, FlexItem } from '@/components/flex/Flex.dev';
-import { AppPlaceholder } from '@sitecore-content-sdk/nextjs';
+import { KeyedAppPlaceholder } from '@/components/content-sdk/KeyedAppPlaceholder';
 import { cva } from 'class-variance-authority';
 
 export const Default: React.FC<ContainerFullBleedProps> = (props) => {
@@ -66,7 +66,7 @@ export const Default: React.FC<ContainerFullBleedProps> = (props) => {
     >
       <Flex fullBleed={true} className="group-[.is-inset]:p-0">
         <FlexItem basis="full">
-          <AppPlaceholder page={page} componentMap={componentMap} name={PLACEHOLDER_NAME} rendering={rendering} />
+          <KeyedAppPlaceholder page={page} componentMap={componentMap} name={PLACEHOLDER_NAME} rendering={rendering} />
         </FlexItem>
       </Flex>
     </section>

@@ -1,10 +1,6 @@
 import React, { type JSX } from 'react';
-import {
-  Field,
-  ImageField,
-  Page,
-  AppPlaceholder,
-} from '@sitecore-content-sdk/nextjs';
+import { Field, ImageField, Page } from '@sitecore-content-sdk/nextjs';
+import { KeyedAppPlaceholder } from '@/components/content-sdk/KeyedAppPlaceholder';
 import Scripts from 'src/Scripts';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Inter } from 'next/font/google';
@@ -103,7 +99,7 @@ const Layout = ({ page, baseUrl: baseUrlProp }: LayoutProps): JSX.Element => {
               {/* Header placeholder - components handle their own semantic elements */}
               <div id="header">
                 {route && (
-                  <AppPlaceholder
+                  <KeyedAppPlaceholder
                     page={page}
                     componentMap={componentMap}
                     name="headless-header"
@@ -114,7 +110,7 @@ const Layout = ({ page, baseUrl: baseUrlProp }: LayoutProps): JSX.Element => {
               {/* Main content area */}
               <main id="content" role="main">
                 {route && (
-                  <AppPlaceholder
+                  <KeyedAppPlaceholder
                     page={page}
                     componentMap={componentMap}
                     name="headless-main"
@@ -125,7 +121,7 @@ const Layout = ({ page, baseUrl: baseUrlProp }: LayoutProps): JSX.Element => {
               {/* Footer placeholder - components handle their own semantic elements */}
               <div id="footer">
                 {route && (
-                  <AppPlaceholder
+                  <KeyedAppPlaceholder
                     page={page}
                     componentMap={componentMap}
                     name="headless-footer"

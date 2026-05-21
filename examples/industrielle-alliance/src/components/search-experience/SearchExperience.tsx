@@ -92,7 +92,8 @@ const SearchExperienceDefault = (props: SearchExperienceProps) => {
             <SearchInput value={inputValue} onChange={(value) => onSearchChange(value, true)} />
 
             <p className="text-gray-600 mb-6">
-              {total} {t(DICTIONARY_KEYS.RESULTS_FOUND) || 'results found'}
+              {t(DICTIONARY_KEYS.RESULTS_FOUND, { count: total ?? 0 }) ||
+                `${total ?? 0} results found`}
             </p>
           </div>
 

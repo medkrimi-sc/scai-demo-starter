@@ -23,7 +23,8 @@ export const IaAdvice: React.FC<ArticleHeaderPropsInput> = (props) => {
 
 export const Default: React.FC<ArticleHeaderPropsInput> = (props) => {
   const { page, params } = props;
-  const resolved = resolveArticleHeaderFields(props);
+  const routeFields = (page?.layout?.sitecore?.route?.fields ?? {}) as Record<string, unknown>;
+  const resolved = resolveArticleHeaderFields(props, routeFields);
   const {
     imageRequired,
     eyebrowOptional,

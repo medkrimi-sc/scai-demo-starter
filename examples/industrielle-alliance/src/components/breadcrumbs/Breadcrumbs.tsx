@@ -24,6 +24,8 @@ type BreadcrumbsData = {
       datasource: {
         ancestors: BreadcrumbsPage[];
         name: string;
+        title?: GqlFieldString;
+        navigationTitle?: GqlFieldString;
       };
     };
   };
@@ -40,28 +42,53 @@ const truncate = (str: string): string => {
   return str?.length > 25 ? str.replace(/(.{24})..+/, '$1').trim().concat('...') : str;
 };
 
+export function getBreadcrumbLabel(
+  page: BreadcrumbsPage,
+  options?: { includeNameFallback?: boolean },
+): string {
+  const label =
+    page.navigationTitle?.jsonValue?.value?.trim() ||
+    page.title?.jsonValue?.value?.trim() ||
+    '';
+
+  if (label || !options?.includeNameFallback) {
+    return label;
+  }
+
+  return page.name?.trim() || '';
+}
+
+export function getVisibleAncestors(ancestors?: BreadcrumbsPage[]): BreadcrumbsPage[] {
+  if (!ancestors?.length) {
+    return [];
+  }
+
+  return ancestors.filter((ancestor) => Boolean(getBreadcrumbLabel(ancestor)));
+}
+
 function BreadcrumbsList({
   ancestors,
-  name,
+  currentLabel,
   linkClassName,
   listClassName,
 }: {
   ancestors?: BreadcrumbsPage[];
-  name: string;
+  currentLabel: string;
   linkClassName?: string;
   listClassName?: string;
 }) {
+  const visibleAncestors = getVisibleAncestors(ancestors);
+
   return (
     <Breadcrumb>
       <BreadcrumbList className={listClassName}>
-        {ancestors?.map((ancestor: BreadcrumbsPage, index) => {
-          const title =
-            ancestor.navigationTitle?.jsonValue.value || ancestor.title?.jsonValue.value;
+        {visibleAncestors.map((ancestor, index) => {
+          const title = getBreadcrumbLabel(ancestor);
 
           return (
-            <span key={index} className="contents">
+            <span key={`${ancestor.name}-${index}`} className="contents">
               <BreadcrumbItem>
-                <BreadcrumbLink href={ancestor.url?.href || ''} className={linkClassName}>
+                <BreadcrumbLink href={ancestor.url?.href || '#'} className={linkClassName}>
                   {title}
                 </BreadcrumbLink>
               </BreadcrumbItem>
@@ -70,7 +97,7 @@ function BreadcrumbsList({
           );
         })}
         <BreadcrumbItem>
-          <BreadcrumbPage className={linkClassName}>{truncate(name)}</BreadcrumbPage>
+          <BreadcrumbPage className={linkClassName}>{truncate(currentLabel)}</BreadcrumbPage>
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>
@@ -83,15 +110,26 @@ function BreadcrumbsContent({
   linkClassName,
   listClassName,
 }: BreadcrumbsProps & { className?: string; linkClassName?: string; listClassName?: string }) {
-  const { ancestors, name } = fields?.data?.datasource ?? {};
+  const datasource = fields?.data?.datasource;
+  const { ancestors, name, title, navigationTitle } = datasource ?? {};
+
+  const currentLabel = getBreadcrumbLabel(
+    {
+      name: name ?? '',
+      title: title ?? { jsonValue: { value: '' } },
+      navigationTitle: navigationTitle ?? { jsonValue: { value: '' } },
+    },
+    { includeNameFallback: true },
+  );
+
+  const visibleAncestors = getVisibleAncestors(ancestors);
 
   const breadcrumbItems = [
-    ...(ancestors?.map((ancestor) => ({
-      name: (ancestor.navigationTitle?.jsonValue.value ||
-        ancestor.title?.jsonValue.value) as string,
+    ...visibleAncestors.map((ancestor) => ({
+      name: getBreadcrumbLabel(ancestor),
       url: ancestor.url?.href ? `${getBaseUrl()}${ancestor.url.href}` : undefined,
-    })) || []),
-    { name, url: undefined },
+    })),
+    { name: currentLabel, url: undefined },
   ];
 
   const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbItems);
@@ -106,7 +144,7 @@ function BreadcrumbsContent({
         <StructuredData id="breadcrumb-schema" data={breadcrumbSchema} />
         <BreadcrumbsList
           ancestors={ancestors}
-          name={name}
+          currentLabel={currentLabel}
           linkClassName={linkClassName}
           listClassName={listClassName}
         />

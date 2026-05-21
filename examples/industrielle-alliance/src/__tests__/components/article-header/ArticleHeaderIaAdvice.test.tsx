@@ -67,6 +67,37 @@ describe('ArticleHeaderIaAdvice', () => {
     expect(screen.getByRole('button', { name: /share/i })).toBeInTheDocument();
   });
 
+  it('falls back to route pageTitle when externalFields title is missing', () => {
+    const props = {
+      page: {
+        mode: { isEditing: false },
+        layout: {
+          sitecore: {
+            route: {
+              fields: {
+                pageTitle: { value: 'Route article title' },
+                pageReadTime: { value: '4 min.' },
+              },
+            },
+          },
+        },
+      },
+      fields: {
+        data: {
+          datasource: {
+            imageRequired: { jsonValue: { value: { src: '/hero.jpg' } } },
+            eyebrowOptional: { jsonValue: { value: 'Conseils' } },
+          },
+        },
+      },
+    } as unknown as ArticleHeaderPropsInput;
+
+    render(<ArticleHeaderIaAdvice {...props} />);
+
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Route article title');
+    expect(screen.getByText('4 min.')).toBeInTheDocument();
+  });
+
   it('supports flat externalFields shape', () => {
     const flatProps = {
       page: { mode: { isEditing: false } },

@@ -2,7 +2,8 @@ import { ComponentParams, ComponentRendering } from '@sitecore-content-sdk/nextj
 
 export type SearchParams = ComponentParams & {
   columns?: string;
-  pageSize?: number;
+  /** Rendering param from Sitecore; often a string at runtime (e.g. `"12"`). */
+  pageSize?: number | string;
   styles?: string;
   GridParameters?: string;
   RenderingIdentifier?: string;

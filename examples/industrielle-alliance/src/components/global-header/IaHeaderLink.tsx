@@ -2,7 +2,8 @@
 
 import type React from 'react';
 import Link from 'next/link';
-import { Link as ContentSdkLink, type LinkField } from '@sitecore-content-sdk/nextjs';
+import type { LinkField } from '@sitecore-content-sdk/nextjs';
+import { CompatibleLink } from '@/components/content-sdk/CompatibleLink';
 import { cn } from '@/lib/utils';
 
 type IaHeaderLinkProps = {
@@ -33,17 +34,20 @@ export function IaHeaderLink({
   const resolvedHref = field?.value?.href ?? href;
   const content = children ?? field?.value?.text;
 
-  if (isPageEditing && field) {
+  if (field) {
     return (
-      <ContentSdkLink
+      <CompatibleLink
         field={field}
+        editable={!!isPageEditing}
         className={cn(className)}
         style={style}
         title={title}
         aria-label={ariaLabel}
+        onClick={onClick}
+        {...(prefetch !== undefined ? { prefetch } : {})}
       >
         {content}
-      </ContentSdkLink>
+      </CompatibleLink>
     );
   }
 

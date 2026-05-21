@@ -1,5 +1,5 @@
 import React, { JSX } from 'react';
-import { AppPlaceholder } from '@sitecore-content-sdk/nextjs';
+import { KeyedAppPlaceholder } from '@/components/content-sdk/KeyedAppPlaceholder';
 import { ComponentProps } from 'lib/component-props';
 
 /**
@@ -44,7 +44,7 @@ export const Default = ({ params, rendering, page, componentMap }: ColumnSplitte
         return (
           <div key={index} className={columnClassNames}>
             <div className="row">
-              <AppPlaceholder page={page} componentMap={componentMap} name={`column-${columnNum}-{*}`} rendering={rendering} />
+              <KeyedAppPlaceholder page={page} componentMap={componentMap} name={`column-${columnNum}-{*}`} rendering={rendering} />
             </div>
           </div>
         );

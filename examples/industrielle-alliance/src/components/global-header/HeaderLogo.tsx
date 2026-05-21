@@ -1,11 +1,12 @@
 'use client';
 
+import { useState } from 'react';
 import type { ImageField } from '@sitecore-content-sdk/nextjs';
 import { Image, useSitecore } from '@sitecore-content-sdk/nextjs';
 import { Default as ImageWrapper } from '@/components/image/ImageWrapper.dev';
 import { IaLogoDesktop, IaLogoMobile } from './IaLogo';
 import { IA_HEADER_LOGO_DIMENSIONS } from './ia-header.constants';
-import { shouldUseIaInlineLogo } from './ia-header.utils';
+import { isIaBrandedLogoSrc, shouldUseIaInlineLogo } from './ia-header.utils';
 
 const EMPTY_LOGO_FIELD = { value: {} } as ImageField;
 
@@ -32,16 +33,27 @@ export function HeaderLogo({
       ? 'h-9 w-auto max-w-[149px] object-contain'
       : 'h-[52px] w-full max-w-[200px] object-contain object-left';
 
+  const [cmsImageFailed, setCmsImageFailed] = useState(false);
+
+  const useInlineLogo =
+    shouldUseIaInlineLogo(isEditing, logoSrc) || cmsImageFailed;
+  const useCmsLogo =
+    !useInlineLogo &&
+    Boolean(logoSrc?.trim()) &&
+    isIaBrandedLogoSrc(logoSrc) &&
+    Boolean(logoField);
+
   if (isEditing) {
     return (
-      <div className={wrapperClass} data-field="headerLogo">
+      <div
+        className={wrapperClass}
+        data-field="headerLogo"
+        style={{ minHeight: variant === 'mobile' ? 36 : 52 }}
+      >
         <Image field={logoField ?? EMPTY_LOGO_FIELD} className={imageClass} />
       </div>
     );
   }
-
-  const useCmsLogo =
-    !shouldUseIaInlineLogo(false, logoSrc) && Boolean(logoSrc?.trim());
 
   if (useCmsLogo && logoField) {
     return (
@@ -56,6 +68,7 @@ export function HeaderLogo({
               : 'iA Groupe financier'
           }
           page={page}
+          onError={() => setCmsImageFailed(true)}
         />
       </div>
     );
