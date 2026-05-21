@@ -7,24 +7,39 @@ import { PlaceholderProps } from '@/types/Placeholder.props';
  */
 export type GlobalHeaderProps = ComponentProps & PlaceholderProps & GlobalHeaderFields;
 
+export type GlobalHeaderItemData = {
+  logo?: {
+    jsonValue?: ImageField;
+  };
+  primaryNavigationLinks?: {
+    targetItems?: PrimaryNavItemProps[];
+  };
+  headerContact?: {
+    jsonValue?: LinkField;
+  };
+} & UtilityNavigationProps;
+
+/** GraphQL may return `item` or `datasource` depending on query shape. */
+export type GlobalHeaderDataShape = {
+  item?: GlobalHeaderItemData;
+  datasource?: GlobalHeaderItemData;
+};
+
 export type GlobalHeaderFields = {
   isPageEditing: boolean;
   fields: {
     data: {
-      item: {
-        logo?: {
-          jsonValue?: ImageField;
-        };
-        primaryNavigationLinks?: {
-          targetItems?: PrimaryNavItemProps[];
-        };
-        headerContact?: {
-          jsonValue?: LinkField;
-        };
-      } & UtilityNavigationProps;
+      item: GlobalHeaderItemData;
     };
   };
 };
+
+export function resolveGlobalHeaderItem(
+  fields?: GlobalHeaderFields['fields'],
+): GlobalHeaderItemData | undefined {
+  const data = fields?.data as GlobalHeaderDataShape | undefined;
+  return data?.item ?? data?.datasource;
+}
 
 /**
  * Primary Navigation

@@ -2,25 +2,19 @@
 
 import type React from 'react';
 import { cn } from '@/lib/utils';
-import type { GlobalHeaderProps } from './global-header.props';
+import { resolveGlobalHeaderItem, type GlobalHeaderProps } from './global-header.props';
 import { SecondaryNavBar } from './SecondaryNavBar';
 import { PrimaryNavBar } from './PrimaryNavBar';
 import { MobileHeaderNav } from './MobileHeaderNav';
 
 export const GlobalHeaderDefault: React.FC<GlobalHeaderProps> = (props) => {
   const { fields, isPageEditing } = props ?? {};
-  const headerData = fields?.data as
-    | GlobalHeaderProps['fields']['data']
-    | { datasource?: GlobalHeaderProps['fields']['data']['item'] }
-    | undefined;
-  const headerItem = headerData?.item ?? headerData?.datasource;
-
   const {
     logo,
     primaryNavigationLinks,
     headerContact,
     utilityNavigationLinks,
-  } = headerItem ?? {};
+  } = resolveGlobalHeaderItem(fields) ?? {};
 
   const sectionProps = {
     isPageEditing,
