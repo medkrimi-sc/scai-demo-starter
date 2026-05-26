@@ -41,28 +41,35 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{BA42C39E-15D6-4832-9C41-1CE9465CD1D1}"
+              uid="{ABDDFD35-50E6-439F-9FD8-2632F41A283D}"
               p:before="*"
+              s:ds="local:/Data/Text 2"
+              s:id="{9C6D53E3-FE57-4638-AF7B-6D68304C7A94}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7BDC5D6C3B-179D-419C-8CD5-5A6B828B771A%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=10"
+              s:ph="headless-main" />
+            <r
+              uid="{BA42C39E-15D6-4832-9C41-1CE9465CD1D1}"
+              p:after="r[@uid='{ABDDFD35-50E6-439F-9FD8-2632F41A283D}']"
               s:id="{E80C2A78-FCC2-4D32-8EC5-4133F608BE5C}"
               s:par="DynamicPlaceholderId=1&amp;excludeTopMargin=1"
               s:ph="headless-main" />
             <r
-              uid="{ABDDFD35-50E6-439F-9FD8-2632F41A283D}"
+              uid="{A7726EEC-E0B0-49A2-A35A-2CA22D14433C}"
               p:after="r[@uid='{BA42C39E-15D6-4832-9C41-1CE9465CD1D1}']"
-              s:ds="local:/Data/Text 2"
-              s:id="{9C6D53E3-FE57-4638-AF7B-6D68304C7A94}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7BDC5D6C3B-179D-419C-8CD5-5A6B828B771A%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=10"
+              s:ds="local:/Data/Home Page Promo"
+              s:id="{945776A1-8F30-4749-A668-4FCC434A60ED}"
+              s:par="DynamicPlaceholderId=11&amp;FieldNames=%7B3E0C1D0C-4221-42AD-869C-E097B1E23811%7D"
               s:ph="/headless-main/container-fullbleed-1" />
             <r
-              uid="{A7726EEC-E0B0-49A2-A35A-2CA22D14433C}"
-              p:after="r[@uid='{ABDDFD35-50E6-439F-9FD8-2632F41A283D}']"
+              uid="{C4E8A1B2-3D5F-4A6E-9B0C-1D2E3F4A5B6C}"
+              p:after="r[@uid='{A7726EEC-E0B0-49A2-A35A-2CA22D14433C}']"
               s:ds="local:/Data/Text 3"
               s:id="{9C6D53E3-FE57-4638-AF7B-6D68304C7A94}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7BDC5D6C3B-179D-419C-8CD5-5A6B828B771A%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=11"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7BDC5D6C3B-179D-419C-8CD5-5A6B828B771A%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=12"
               s:ph="/headless-main/container-fullbleed-1" />
             <r
               uid="{ED349CDC-C679-4992-9EF9-2CE6291A4174}"
-              p:after="r[@uid='{A7726EEC-E0B0-49A2-A35A-2CA22D14433C}']"
+              p:after="r[@uid='{C4E8A1B2-3D5F-4A6E-9B0C-1D2E3F4A5B6C}']"
               s:ds="local:/Data/Home Page Image Carousel"
               s:id="{C18FD197-8254-4AB4-8C02-70C4A391354C}"
               s:par="DynamicPlaceholderId=5&amp;FieldNames=%7B7B678488-39E7-40A1-9B2C-011E479F4E4C%7D"
@@ -132,13 +139,13 @@ Languages:
         </r>
     - ID: "2485de13-6c39-468c-9c26-fe08c27088f4"
       Hint: pageSummary
-      Value: Experience the future of electric vehicles with Alaris. Explore our innovative lineup of sustainable cars designed for tomorrow.
+      Value: Viatris is a global healthcare company empowering people worldwide to live healthier at every stage of life.
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20260514T162737Z
     - ID: "27cd428b-f652-4534-b76f-33f64b742659"
       Hint: pageShortTitle
-      Value: Alaris
+      Value: Viatris
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: "{F7FE5BDD-A991-4A58-9735-CD08F9B097AB}"
@@ -151,7 +158,7 @@ Languages:
         sitecore\mohamed.krimi@sitecore.com
     - ID: "5c01b675-9b56-4d6b-aee4-0ecb1a0021f6"
       Hint: pageTitle
-      Value: "Alaris - Get set for an electric future"
+      Value: "Viatris - Where ingenuity makes impact"
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -203,28 +210,35 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{BA42C39E-15D6-4832-9C41-1CE9465CD1D1}"
+              uid="{ABDDFD35-50E6-439F-9FD8-2632F41A283D}"
               p:before="*"
+              s:ds="local:/Data/Text 2"
+              s:id="{9C6D53E3-FE57-4638-AF7B-6D68304C7A94}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7BDC5D6C3B-179D-419C-8CD5-5A6B828B771A%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=10"
+              s:ph="headless-main" />
+            <r
+              uid="{BA42C39E-15D6-4832-9C41-1CE9465CD1D1}"
+              p:after="r[@uid='{ABDDFD35-50E6-439F-9FD8-2632F41A283D}']"
               s:id="{E80C2A78-FCC2-4D32-8EC5-4133F608BE5C}"
               s:par="DynamicPlaceholderId=1&amp;excludeTopMargin=1"
               s:ph="headless-main" />
             <r
-              uid="{ABDDFD35-50E6-439F-9FD8-2632F41A283D}"
+              uid="{A7726EEC-E0B0-49A2-A35A-2CA22D14433C}"
               p:after="r[@uid='{BA42C39E-15D6-4832-9C41-1CE9465CD1D1}']"
-              s:ds="local:/Data/Text 2"
-              s:id="{9C6D53E3-FE57-4638-AF7B-6D68304C7A94}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7BDC5D6C3B-179D-419C-8CD5-5A6B828B771A%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=10"
+              s:ds="local:/Data/Home Page Promo"
+              s:id="{945776A1-8F30-4749-A668-4FCC434A60ED}"
+              s:par="DynamicPlaceholderId=11&amp;FieldNames=%7B3E0C1D0C-4221-42AD-869C-E097B1E23811%7D"
               s:ph="/headless-main/container-fullbleed-1" />
             <r
-              uid="{A7726EEC-E0B0-49A2-A35A-2CA22D14433C}"
-              p:after="r[@uid='{ABDDFD35-50E6-439F-9FD8-2632F41A283D}']"
+              uid="{C4E8A1B2-3D5F-4A6E-9B0C-1D2E3F4A5B6C}"
+              p:after="r[@uid='{A7726EEC-E0B0-49A2-A35A-2CA22D14433C}']"
               s:ds="local:/Data/Text 3"
               s:id="{9C6D53E3-FE57-4638-AF7B-6D68304C7A94}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7BDC5D6C3B-179D-419C-8CD5-5A6B828B771A%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=11"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7BDC5D6C3B-179D-419C-8CD5-5A6B828B771A%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=12"
               s:ph="/headless-main/container-fullbleed-1" />
             <r
               uid="{ED349CDC-C679-4992-9EF9-2CE6291A4174}"
-              p:after="r[@uid='{A7726EEC-E0B0-49A2-A35A-2CA22D14433C}']"
+              p:after="r[@uid='{C4E8A1B2-3D5F-4A6E-9B0C-1D2E3F4A5B6C}']"
               s:ds="local:/Data/Home Page Image Carousel"
               s:id="{C18FD197-8254-4AB4-8C02-70C4A391354C}"
               s:par="DynamicPlaceholderId=5&amp;FieldNames=%7B7B678488-39E7-40A1-9B2C-011E479F4E4C%7D"
@@ -253,7 +267,7 @@ Languages:
       Value: 20260514T162737Z
     - ID: "27cd428b-f652-4534-b76f-33f64b742659"
       Hint: pageShortTitle
-      Value: Alaris
+      Value: Viatris
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: "{F7FE5BDD-A991-4A58-9735-CD08F9B097AB}"
