@@ -1,0 +1,107 @@
+---
+ID: "137a903f-efad-4fdb-8477-13b77339c615"
+Parent: "894cc8e3-6991-4c4a-910b-02d33a3e849a"
+Template: "03ba85aa-ad3e-412b-b6c3-0c2af639b49f"
+Path: "/sitecore/content/viatris/viatris/Home/Data/Retirement - Home Page Image Carousel/Slide 2"
+BranchID: "9ba623cf-080b-4074-9a36-e54550ca4d13"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{A053ED9F-4099-4682-9411-2B4C98E481E4}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 50
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "c9e57e65-624a-44ee-ad47-904f6f123a34"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{FE4D50B6-178A-4B61-B363-635EA18EA368}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260514T162825Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{12FFAC4C-565F-4C9A-B63E-7F77E96B4D1F}"
+    - ID: "4d806366-a3b0-460d-b84f-87383453372e"
+      Hint: image
+      Value: |
+        <image mediaid="52cd0db5-64e2-4570-a758-61cd08a87ad8" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "58b4e062-1aab-4b9a-aff9-3e60f941a03e"
+      Hint: backgroundText
+      Value: "Tax-free savings account"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "53728043-0f5d-46c2-867a-34098e6a9b1f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260520T123833Z
+    - ID: "f4e44a85-84c1-4f40-957d-49732e92706b"
+      Hint: link
+      Value: |
+        <link class="" querystring="" id="{A4E8676C-1AE7-4A03-A7E4-F97180554C51}" anchor="" target="" title="Explore All Models" linktype="internal" text="Find out more" url="/viatris/viatris/Home/Services/Savings and retirement" />
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260514T162825Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{12FFAC4C-565F-4C9A-B63E-7F77E96B4D1F}"
+    - ID: "4d806366-a3b0-460d-b84f-87383453372e"
+      Hint: image
+      Value: |
+        <image mediaid="d4c257e9-9764-4349-9cd7-4b5c8cfc6c1c" alt="carroussel_transfert_patrimoine" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "58b4e062-1aab-4b9a-aff9-3e60f941a03e"
+      Hint: backgroundText
+      Value: Transfert de patrimoine
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "303e8449-39f6-46bc-b9f1-a4b474470720"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260520T123833Z
+    - ID: "f4e44a85-84c1-4f40-957d-49732e92706b"
+      Hint: link
+      Value: |
+        <link class="" id="{A4E8676C-1AE7-4A03-A7E4-F97180554C51}" querystring="" anchor="" target="" title="Explorez tous les modèles" linktype="internal" text="En savoir plus" url="/viatris/viatris/Home/Services/Savings and retirement" />

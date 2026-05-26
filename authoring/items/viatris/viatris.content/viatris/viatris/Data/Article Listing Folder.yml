@@ -1,0 +1,19 @@
+---
+ID: "b6c7d8e9-f0a1-4234-b567-890123456789"
+Parent: "71d0ba29-576d-4e18-8542-5b8da4db8074"
+Template: "b2f93736-abfd-4c2b-9ddd-09fd43123953"
+Path: "/sitecore/content/viatris/viatris/Data/Article Listing Folder"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260520T120000Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ia-article-listing-folder-001"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260520T120000Z

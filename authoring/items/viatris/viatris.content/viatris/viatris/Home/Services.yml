@@ -1,0 +1,59 @@
+---
+ID: "d6700d73-a67c-450e-b665-e1b1b1adb228"
+Parent: "e1c2b39a-8d1a-4a7a-84ad-28cfba4861f8"
+Template: "cbfd4c88-df62-4bf1-acd7-7ce261b681bc"
+Path: "/sitecore/content/viatris/viatris/Home/Services"
+BranchID: "6b289b7b-5c87-4423-aee6-bf33e0627fbb"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {A9919790-3389-4FC2-ABC8-24F73C847C8E}
+    {C3C9FC9E-E7D3-44E6-B777-AA23496924C7}
+    {84DBE64B-0FED-4125-A971-725C0155C321}
+    {9A52202D-3A77-4F6D-B9BD-6AECED9BD49A}
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "a253627b-d6aa-4fc0-bed2-df16cdcfa700"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{7070586A-D5A2-4997-82A0-0286CC88B58F}"
+Languages:
+- Language: en
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "547f592d-9818-41b5-b244-634a8afb7da3"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Services
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260514T162844Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{F7FE5BDD-A991-4A58-9735-CD08F9B097AB}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a4142b96-c548-434a-a4bf-4779b8e836d4"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260520T123843Z

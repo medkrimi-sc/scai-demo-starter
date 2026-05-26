@@ -1,0 +1,73 @@
+---
+ID: "1774b934-fcc8-4abb-a5ad-32aac1a1c4b6"
+Parent: "b394b203-8be5-4e71-bdc7-0ceeb6b92c57"
+Template: "0a7aa373-5ed1-4e9b-9678-22d3c5faf6df"
+Path: "/sitecore/content/viatris/viatris/Home/Data/Text 2"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260519T092007Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: |
+        <div class="ck-content"><div style="background-color:#0757d8;box-sizing:border-box;color:#fff;font-family:Arial, Helvetica, sans-serif;padding:70px 0;width:100%;"><div style="box-sizing:border-box;margin:0 auto;max-width:1080px;padding:0 24px;"><h2 style="color:#fff;font-size:42px;letter-spacing:-1px;line-height:1.1;margin:0 0 36px;"><strong>Our insurance and savings solutions</strong></h2><div style="align-items:stretch;box-sizing:border-box;display:flex;gap:10px;"><div style="box-sizing:border-box;display:grid;gap:10px;grid-template-columns:1fr 1fr;width:67%;"><div style="align-items:center;background-color:#e5f6ff;border-radius:8px;box-sizing:border-box;color:#06233f;display:flex;gap:16px;min-height:74px;padding:18px 20px;"><div style="color:#0757d8;flex-shrink:0;font-size:28px;width:34px;">▣</div><div style="flex:1;"><div style="font-size:14px;line-height:1.15;margin-bottom:4px;"><strong>Car insurance</strong></div><div style="font-size:13px;line-height:1.25;">Drive with confidence</div></div><div style="color:#0757d8;font-size:24px;">›</div></div><div style="align-items:center;background-color:#e5f6ff;border-radius:8px;box-sizing:border-box;color:#06233f;display:flex;gap:16px;min-height:74px;padding:18px 20px;"><div style="color:#0757d8;flex-shrink:0;font-size:28px;width:34px;">⌂</div><div style="flex:1;"><div style="font-size:14px;line-height:1.15;margin-bottom:4px;"><strong>Home insurance</strong></div><div style="font-size:13px;line-height:1.25;">Protect what matters</div></div><div style="color:#0757d8;font-size:24px;">›</div></div><div style="align-items:center;background-color:#e5f6ff;border-radius:8px;box-sizing:border-box;color:#06233f;display:flex;gap:16px;min-height:74px;padding:18px 20px;"><div style="color:#0757d8;flex-shrink:0;font-size:28px;width:34px;">✚</div><div style="flex:1;"><div style="font-size:14px;line-height:1.15;margin-bottom:4px;"><strong>Health and disability insurance</strong></div><div style="font-size:13px;line-height:1.25;">Protect your income</div></div><div style="color:#0757d8;font-size:24px;">›</div></div><div style="align-items:center;background-color:#e5f6ff;border-radius:8px;box-sizing:border-box;color:#06233f;display:flex;gap:16px;min-height:74px;padding:18px 20px;"><div style="color:#0757d8;flex-shrink:0;font-size:28px;width:34px;">♡</div><div style="flex:1;"><div style="font-size:14px;line-height:1.15;margin-bottom:4px;"><strong>Life insurance</strong></div><div style="font-size:13px;line-height:1.25;">Support your loved ones</div></div><div style="color:#0757d8;font-size:24px;">›</div></div><div style="align-items:center;background-color:#e5f6ff;border-radius:8px;box-sizing:border-box;color:#06233f;display:flex;gap:16px;min-height:74px;padding:18px 20px;"><div style="color:#0757d8;flex-shrink:0;font-size:28px;width:34px;">⌑</div><div style="flex:1;"><div style="font-size:14px;line-height:1.15;margin-bottom:4px;"><strong>Education savings plan</strong></div><div style="font-size:13px;line-height:1.25;">Plan your child’s future</div></div><div style="color:#0757d8;font-size:24px;">›</div></div><div style="align-items:center;background-color:#e5f6ff;border-radius:8px;box-sizing:border-box;color:#06233f;display:flex;gap:16px;min-height:74px;padding:18px 20px;"><div style="color:#0757d8;flex-shrink:0;font-size:28px;width:34px;">$</div><div style="flex:1;"><div style="font-size:14px;line-height:1.15;margin-bottom:4px;"><strong>RRSP, TFSA, FHSA and other plans</strong></div><div style="font-size:13px;line-height:1.25;">Save for your projects</div></div><div style="color:#0757d8;font-size:24px;">›</div></div></div><figure class="image image_resized" style="height:100%;width:100%;"><img style="display:block;object-fit:cover;" src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="" /></figure></div><div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:34px;"><a style="align-items:center;background-color:#fff;border-radius:999px;color:#0757d8;display:inline-flex;font-size:14px;justify-content:center;min-height:48px;padding:0 28px;text-decoration:none;" href="#"><strong>Speak with an advisor </strong></a><a style="align-items:center;border-radius:999px;border:2px solid #fff;color:#fff;display:inline-flex;font-size:14px;justify-content:center;min-height:48px;padding:0 28px;text-decoration:none;" href="#"><strong>View our full offer (15)&nbsp;</strong></a></div></div></div></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c1a16df0-456b-4331-b51e-19a24a50be9f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260519T092745Z
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260519T092007Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: |
+        <div class="ck-content"><div style="background-color:#0757d8;box-sizing:border-box;color:#fff;font-family:Arial, Helvetica, sans-serif;padding:70px 0;width:100%;"><div style="box-sizing:border-box;margin:0 auto;max-width:1080px;padding:0 24px;"><h2 style="color:#fff;font-size:42px;letter-spacing:-1px;line-height:1.1;margin:0 0 36px;"><strong>Nos solutions d’assurance et d’épargne</strong></h2><div style="align-items:stretch;box-sizing:border-box;display:flex;gap:10px;"><div style="box-sizing:border-box;display:grid;gap:10px;grid-template-columns:1fr 1fr;width:67%;"><div style="align-items:center;background-color:#e5f6ff;border-radius:8px;box-sizing:border-box;color:#06233f;display:flex;gap:16px;min-height:74px;padding:18px 20px;"><div style="color:#0757d8;flex-shrink:0;font-size:28px;width:34px;">▣</div><div style="flex:1;"><div style="font-size:14px;line-height:1.15;margin-bottom:4px;"><strong>Assurance auto</strong></div><div style="font-size:13px;line-height:1.25;">Conduisez en toute confiance</div></div><div style="color:#0757d8;font-size:24px;">›</div></div><div style="align-items:center;background-color:#e5f6ff;border-radius:8px;box-sizing:border-box;color:#06233f;display:flex;gap:16px;min-height:74px;padding:18px 20px;"><div style="color:#0757d8;flex-shrink:0;font-size:28px;width:34px;">⌂</div><div style="flex:1;"><div style="font-size:14px;line-height:1.15;margin-bottom:4px;"><strong>Assurance habitation</strong></div><div style="font-size:13px;line-height:1.25;">Protégez ce qui compte</div></div><div style="color:#0757d8;font-size:24px;">›</div></div><div style="align-items:center;background-color:#e5f6ff;border-radius:8px;box-sizing:border-box;color:#06233f;display:flex;gap:16px;min-height:74px;padding:18px 20px;"><div style="color:#0757d8;flex-shrink:0;font-size:28px;width:34px;">✚</div><div style="flex:1;"><div style="font-size:14px;line-height:1.15;margin-bottom:4px;"><strong>Assurance santé et invalidité</strong></div><div style="font-size:13px;line-height:1.25;">Protégez votre revenu</div></div><div style="color:#0757d8;font-size:24px;">›</div></div><div style="align-items:center;background-color:#e5f6ff;border-radius:8px;box-sizing:border-box;color:#06233f;display:flex;gap:16px;min-height:74px;padding:18px 20px;"><div style="color:#0757d8;flex-shrink:0;font-size:28px;width:34px;">♡</div><div style="flex:1;"><div style="font-size:14px;line-height:1.15;margin-bottom:4px;"><strong>Assurance vie</strong></div><div style="font-size:13px;line-height:1.25;">Soutenez vos proches</div></div><div style="color:#0757d8;font-size:24px;">›</div></div><div style="align-items:center;background-color:#e5f6ff;border-radius:8px;box-sizing:border-box;color:#06233f;display:flex;gap:16px;min-height:74px;padding:18px 20px;"><div style="color:#0757d8;flex-shrink:0;font-size:28px;width:34px;">⌑</div><div style="flex:1;"><div style="font-size:14px;line-height:1.15;margin-bottom:4px;"><strong>Régime d’épargne-études</strong></div><div style="font-size:13px;line-height:1.25;">Planifiez l’avenir de votre enfant</div></div><div style="color:#0757d8;font-size:24px;">›</div></div><div style="align-items:center;background-color:#e5f6ff;border-radius:8px;box-sizing:border-box;color:#06233f;display:flex;gap:16px;min-height:74px;padding:18px 20px;"><div style="color:#0757d8;flex-shrink:0;font-size:28px;width:34px;">$</div><div style="flex:1;"><div style="font-size:14px;line-height:1.15;margin-bottom:4px;"><strong>REER, CELI, CELIAPP et autres régimes</strong></div><div style="font-size:13px;line-height:1.25;">Épargnez pour vos projets</div></div><div style="color:#0757d8;font-size:24px;">›</div></div></div><figure class="image image_resized" style="height:100%;width:100%;"><img style="display:block;object-fit:cover;" src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="" /></figure></div><div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:34px;"><a style="align-items:center;background-color:#fff;border-radius:999px;color:#0757d8;display:inline-flex;font-size:14px;justify-content:center;min-height:48px;padding:0 28px;text-decoration:none;" href="#"><strong>Parlez à un conseiller </strong></a><a style="align-items:center;border-radius:999px;border:2px solid #fff;color:#fff;display:inline-flex;font-size:14px;justify-content:center;min-height:48px;padding:0 28px;text-decoration:none;" href="#"><strong>Consultez notre offre complète (15)&nbsp;</strong></a></div></div></div></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "861701ae-affa-46ea-93ac-1f13d5360c16"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260520T101016Z

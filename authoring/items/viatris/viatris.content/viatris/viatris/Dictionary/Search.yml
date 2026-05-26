@@ -1,0 +1,19 @@
+---
+ID: "d1e2f3a4-b5c6-4789-a012-345678901811"
+Parent: "6b512181-8962-4291-86d1-eee0bf724f13"
+Template: "267d9ac7-5d85-4e9d-af89-99ab296cc218"
+Path: "/sitecore/content/viatris/viatris/Dictionary/Search"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260520T140000Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ia-dict-search-folder-001"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260520T140000Z

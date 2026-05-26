@@ -1,0 +1,52 @@
+---
+ID: "78537741-0a29-4707-bbc4-419a75723a5d"
+Parent: "f40d078b-4fae-4b37-8f37-bb2c71cc1249"
+Template: "58041043-7bea-44f0-b1b8-08e4ea7054f4"
+Path: "/sitecore/content/viatris/viatris/Home/Advice Zone/IA Article Page/Data/Article Body"
+BranchID: "e1f2a3b4-c5d6-4789-a012-345678901001"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{A053ED9F-4099-4682-9411-2B4C98E481E4}"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "70381eb6-28f0-4d16-bad5-983a8b1d7fd7"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{E5A6B7C8-A9B0-4123-E456-789012345006}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260520T130450Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{4460E76C-87E9-4859-9DE6-DE122774937F}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "8b57dadd-0825-4f5d-9c32-187c0af7e1fd"
+      Hint: text
+      Value: |
+        <div class="ck-content"><h3>Don’t have a joint report form in your vehicle?</h3><p><strong>Be sure to write down the following information about the other driver:</strong></p><ul><li>Name</li><li>Address</li><li>Telephone number</li><li>Driver’s licence number</li><li>Vehicle registration certificate number</li><li>Insurer’s name, contact details, and policy number</li></ul><p>You should also write down a description of the facts. Then send this information to your insurer.</p><p><strong>Tip:</strong> A joint report can also be filled out online <a href="https://infoassurance.ca/en/joint-report" target="_blank" rel="noopener noreferrer" title="here">here</a>.</p><h3>Where to get a joint report form?</h3><p><strong>You can get a free joint report form from the Groupement des assureurs automobile (GAA):</strong></p><ul><li>By calling <a href="tel:+18772884321">1-877-288-4321</a> or online <a href="https://infoassurance.ca/en/joint-report" target="_blank" rel="noopener noreferrer" title="here">here</a>.</li></ul><h3>If anyone is injured</h3><p>If you are involved in an accident and someone is injured, call <a href="tel:911">9-1-1</a> immediately.</p><h3>Crash involving a parked vehicle</h3><p>If you hit a parked vehicle and are able to identify the driver, fill out a joint report and send it to your insurer.</p><h3>Crash involving an unoccupied vehicle or object</h3><p>If you hit an unoccupied vehicle or other object, you only need to contact the police if damage has been caused to a third party, such as another vehicle or someone else’s property. In this case, provide your identification information along with information about the other vehicle or damaged object, if applicable.</p><p>If the damage is only to your own vehicle, it is not necessary to notify the police.</p></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "81cc5295-e263-4547-b26f-5bcc015c5960"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260520T130922Z

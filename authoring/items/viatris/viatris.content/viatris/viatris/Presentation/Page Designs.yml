@@ -1,0 +1,45 @@
+---
+ID: "fcc879a7-38a8-4dce-9c5e-fcc75eb6b305"
+Parent: "81a4903d-9b1d-4ef0-9728-6d8cedea5d54"
+Template: "fa260482-75ae-4dec-9a5f-57581d1baeab"
+Path: "/sitecore/content/viatris/viatris/Presentation/Page Designs"
+BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e"
+SharedFields:
+- ID: "ba1f60d6-3deb-40cc-bb61-eec772279ee1"
+  Hint: TemplatesMapping
+  Value: "%7bFA5486FF-5816-4D3D-B099-47F20C0DDE31%7d%3d%257B80C57F0A-CD7C-475A-88B5-CDA047D09066%257D%26%7b35D8A90D-75DA-4A47-A476-F8879DD5E4E2%7d%3d%257B80C57F0A-CD7C-475A-88B5-CDA047D09066%257D%26%7b59C79703-3490-4278-A143-7EE7237C1BE9%7d%3d%257B0E6F4EA3-57D3-45F4-A514-ED32F012DFC0%257D%26%7bB0602368-F67C-433C-8700-862D480546D0%7d%3d%257B0E6F4EA3-57D3-45F4-A514-ED32F012DFC0%257D%26%7b906BF417-1208-4785-A8F4-EECC26C00FD5%7d%3d%257B80C57F0A-CD7C-475A-88B5-CDA047D09066%257D%26%7b9B575283-5B92-4A47-9C19-79DF69BE537D%7d%3d%257BA1B2C3D4-E5F6-4789-A012-3456789AB001%257D%26%7b57A49603-1DFB-40A1-9DDF-56A7835062DD%7d%3d%257B80C57F0A-CD7C-475A-88B5-CDA047D09066%257D%26%7bA9919790-3389-4FC2-ABC8-24F73C847C8E%7d%3d%257B80C57F0A-CD7C-475A-88B5-CDA047D09066%257D"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "0e2e980d-fa68-4e77-bc96-447b222f01c7"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{2EA756FA-AED6-4599-83B7-36FEFE229B31}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260514T162738Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{F7FE5BDD-A991-4A58-9735-CD08F9B097AB}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "481e66c0-c169-402c-ba3b-e6a8df3a10e0"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\mohamed.krimi@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260520T101716Z
