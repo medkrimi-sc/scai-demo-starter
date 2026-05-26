@@ -1,6 +1,6 @@
 ---
-ID: "1919f395-ba72-4609-baec-82b8cecda6fa"
-Parent: "c4ee2b18-f5c2-447e-969d-9131672a2578"
+ID: "7717f40a-3d3b-45cf-a92c-efc68a29d023"
+Parent: "0af799d9-a035-4cce-aef2-93b3e09b3a99"
 Template: "03ba85aa-ad3e-412b-b6c3-0c2af639b49f"
 Path: "/sitecore/content/viatris/viatris/Home/Data/Home Page Image Carousel/Slide 1"
 BranchID: "9ba623cf-080b-4074-9a36-e54550ca4d13"
@@ -59,7 +59,7 @@ Languages:
     - ID: "f4e44a85-84c1-4f40-957d-49732e92706b"
       Hint: link
       Value: |
-        <link class="" querystring="" id="{6CCF5A5D-02A2-4568-AD45-B5B792380016}" anchor="" target="" title="Explore All Models" linktype="internal" text="Learn more" url="/viatris/viatris/Home/Services/Insurance" />
+        <link class="" querystring="" id="{AE5A90B9-1C31-47F0-A61D-FB74EA6C0E58}" anchor="" target="" title="Explore All Models" linktype="internal" text="Learn more" url="/viatris/viatris/Home/Services/Insurance" />
 - Language: "fr-CA"
   Versions:
   - Version: 1
@@ -104,4 +104,4 @@ Languages:
     - ID: "f4e44a85-84c1-4f40-957d-49732e92706b"
       Hint: link
       Value: |
-        <link class="" id="{6CCF5A5D-02A2-4568-AD45-B5B792380016}" querystring="" anchor="" target="" title="Explorez tous les modèles" linktype="internal" text="En savoir plus" url="/viatris/viatris/Home/Services/Insurance" />
+        <link class="" id="{AE5A90B9-1C31-47F0-A61D-FB74EA6C0E58}" querystring="" anchor="" target="" title="Explorez tous les modèles" linktype="internal" text="En savoir plus" url="/viatris/viatris/Home/Services/Insurance" />

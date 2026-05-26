@@ -1,6 +1,6 @@
 ---
-ID: "ac19abb6-9c74-464f-814b-df91a52f7b00"
-Parent: "3f53d1ff-762b-4a24-a926-84779e779dc9"
+ID: "608fdccd-cf99-4e23-9eeb-8a02d7c18047"
+Parent: "84e454dd-90df-4b99-bf09-054cf3c69dc6"
 Template: "03ba85aa-ad3e-412b-b6c3-0c2af639b49f"
 Path: "/sitecore/content/viatris/viatris/Home/Data/Insurance - Home Page Image Carousel/Slide 3"
 BranchID: "9ba623cf-080b-4074-9a36-e54550ca4d13"
@@ -59,7 +59,7 @@ Languages:
     - ID: "f4e44a85-84c1-4f40-957d-49732e92706b"
       Hint: link
       Value: |
-        <link class="" querystring="" id="{E99E9772-169D-4953-A8CE-125AF397AC72}" anchor="" target="" title="Explore All Models" linktype="internal" text="Get a quote" url="/viatris/viatris/Home/Services/Wealth Management" />
+        <link class="" querystring="" id="{46E8432E-C52C-4ABB-A44A-0E7D11B0B3F2}" anchor="" target="" title="Explore All Models" linktype="internal" text="Get a quote" url="/viatris/viatris/Home/Services/Wealth Management" />
 - Language: "fr-CA"
   Versions:
   - Version: 1
@@ -104,4 +104,4 @@ Languages:
     - ID: "f4e44a85-84c1-4f40-957d-49732e92706b"
       Hint: link
       Value: |
-        <link class="" id="{E99E9772-169D-4953-A8CE-125AF397AC72}" querystring="" anchor="" target="" title="Explorez tous les modèles" linktype="internal" text="En savoir plus" url="/viatris/viatris/Home/Services/Wealth Management" />
+        <link class="" id="{46E8432E-C52C-4ABB-A44A-0E7D11B0B3F2}" querystring="" anchor="" target="" title="Explorez tous les modèles" linktype="internal" text="En savoir plus" url="/viatris/viatris/Home/Services/Wealth Management" />

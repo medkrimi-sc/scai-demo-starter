@@ -1,6 +1,6 @@
 ---
-ID: "d7801a94-5572-4f11-9bdf-bd7ff469de8b"
-Parent: "ca3b0037-a2f1-40dc-8b4b-48476ad9a5d5"
+ID: "8a73fcac-71ee-49ca-940e-c31a1620c77b"
+Parent: "3656b9c5-be16-4f4e-8153-1e79cbd346dd"
 Template: "754d4fd3-aa54-46d0-84bd-0bb43f8aeba0"
 Path: "/sitecore/content/viatris/viatris/Home/Services/Wealth Management/Data/Page Header 1"
 BranchID: "6b289b7b-5c87-4423-aee6-bf33e0627fbb"
@@ -25,7 +25,7 @@ Languages:
     - ID: "050b0870-ebcd-41bc-846e-0a5e4828c3a7"
       Hint: link1
       Value: |
-        <link linktype="internal" id="{650EF73D-409F-445E-B505-077B288EBE38}" anchor="" querystring="" target="" class="" text="Talk to an advisor" title=""/>
+        <link linktype="internal" id="{88890143-0F47-4B32-81FC-2FED23E32792}" anchor="" querystring="" target="" class="" text="Talk to an advisor" title=""/>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20260514T162851Z
@@ -39,7 +39,7 @@ Languages:
     - ID: "4a3ab7ba-d36c-4133-96a3-30e15566056f"
       Hint: link2
       Value: |
-        <link linktype="internal" id="{E1C2B39A-8D1A-4A7A-84AD-28CFBA4861F8}" anchor="" querystring="" target="" class="" text="Customer Service" title=""/>
+        <link linktype="internal" id="{B3147DA2-B879-45C8-9456-4F37417C9646}" anchor="" querystring="" target="" class="" text="Customer Service" title=""/>
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |

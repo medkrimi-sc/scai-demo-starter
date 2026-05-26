@@ -1,6 +1,6 @@
 ---
-ID: "6ccf5a5d-02a2-4568-ad45-b5b792380016"
-Parent: "d6700d73-a67c-450e-b665-e1b1b1adb228"
+ID: "ae5a90b9-1c31-47f0-a61d-fb74ea6c0e58"
+Parent: "b80c5cc8-26d5-4d4e-a286-8a3d8b1875d2"
 Template: "57a49603-1dfb-40a1-9ddf-56a7835062dd"
 Path: "/sitecore/content/viatris/viatris/Home/Services/Insurance"
 BranchID: "6b289b7b-5c87-4423-aee6-bf33e0627fbb"
@@ -51,14 +51,14 @@ Languages:
               p:after="r[@uid='{E9152102-E995-45CC-AECC-8909E68D90A7}']"
               s:ds="local:/Data/Page Header 2"
               s:id="{C78595D2-0892-4EC6-9FF8-B71EDBF17861}"
-              s:par="FieldNames=%7BE7A0530E-FC31-463A-BD71-A622B87D25BC%7D&amp;CSSStyles&amp;DynamicPlaceholderId=2"
+              s:par="FieldNames=%7BBE43B93F-E35F-4F1E-A4E5-EEA4D4D69661%7D&amp;CSSStyles&amp;DynamicPlaceholderId=2"
               s:ph="/headless-main/container-fullbleed-1" />
             <r
               uid="{08CC2408-D09B-48DC-8ADC-AED77D561DED}"
               p:after="r[@uid='{81E4D0C2-D178-48A8-A77A-ECF53033DD2B}']"
               s:ds="local:/Data/Aero Text Banner"
               s:id="{E7B031D3-161F-4391-8B23-785FC8445D1E}"
-              s:par="FieldNames=%7B7390416E-277F-425F-8DD6-AE92EBAF62CB%7D&amp;CSSStyles&amp;DynamicPlaceholderId=3"
+              s:par="FieldNames=%7B4A37584B-AC5D-428E-BECE-AAE29E938322%7D&amp;CSSStyles&amp;DynamicPlaceholderId=3"
               s:ph="/headless-main/container-fullbleed-1" />
             <r
               uid="{E8ED4E7F-0264-48BC-A4F0-A80D97BB4800}"
@@ -71,7 +71,7 @@ Languages:
               p:after="*[1=2]"
               s:ds="local:/Data/Image Gallery 1"
               s:id="{939246CC-DAAB-4FE9-A265-536995A04122}"
-              s:par="FieldNames=%7BD05ED32B-9AAC-487B-A4B7-7841423EA166%7D&amp;CSSStyles&amp;DynamicPlaceholderId=5"
+              s:par="FieldNames=%7B7ACB32A4-7C8A-4DA8-8107-E678BAC647B1%7D&amp;CSSStyles&amp;DynamicPlaceholderId=5"
               s:ph="/headless-main/container-fullbleed-1/container-fullwidth-4" />
           </d>
         </r>
@@ -103,7 +103,7 @@ Languages:
         sitecore\mohamed.krimi@sitecore.com
     - ID: "69c33f09-f870-4d18-86c6-c34d9f3ac290"
       Hint: taxContentType
-      Value: "{65BB480D-2B75-49B6-98AE-8DC14EA40A16}"
+      Value: "{DBBF9CE8-AFB6-4B96-87CA-D8F514429B6B}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
       Value: "7bf0cd15-fecf-4215-8606-aaa2aadb4a59"

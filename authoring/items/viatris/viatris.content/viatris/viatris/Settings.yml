@@ -1,13 +1,13 @@
 ---
-ID: "09ccda26-a34d-4367-b1d5-e3837f7c53a9"
-Parent: "fd09eacc-8af2-4850-9b6c-0c1dcacc9890"
+ID: "f202d24b-27f9-4af1-a651-fdc901306c13"
+Parent: "7652fbb8-ffc1-414d-9fb6-8fc54f9772b2"
 Template: "258d9bd9-8add-4f7c-bd6c-71cd42383f12"
 Path: "/sitecore/content/viatris/viatris/Settings"
 BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e"
 SharedFields:
 - ID: "0129da3f-8c86-4591-ae32-6ec923413923"
   Hint: DictionaryDomain
-  Value: "{6B512181-8962-4291-86D1-EEE0BF724F13}"
+  Value: "{25A9AE32-F84D-4349-82F7-80E803B22D5C}"
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
   Hint: __Masters
   Value: "{C2DC4690-AF44-48C7-BB21-90D1AD246732}"
@@ -22,7 +22,7 @@ SharedFields:
   Value: "viatris"
 - ID: "5764d2d4-724d-4313-a81b-9246c911faff"
   Hint: AppDatasourcesPath
-  Value: "{71D0BA29-576D-4E18-8542-5B8DA4DB8074}"
+  Value: "{FBB17D09-F6D6-44AC-BA54-D6D3F5ACC8ED}"
 - ID: "5ca117eb-8782-4a4f-9f2f-30de31fc2e34"
   Hint: PlaceholdersPath
   Value: "{986F5AA0-9115-4FFE-8AE6-5901D95352FB}"
@@ -34,7 +34,7 @@ SharedFields:
   Value: http
 - ID: "a7bbad73-b933-49ff-95c8-1c269cb35e7c"
   Hint: DictionaryPath
-  Value: "{6B512181-8962-4291-86D1-EEE0BF724F13}"
+  Value: "{25A9AE32-F84D-4349-82F7-80E803B22D5C}"
 - ID: "af332c24-fe17-41e7-8caf-8e64c588fe72"
   Hint: EditingTheme
   Value: "{3BCAB9EF-1E4F-4C23-B452-783BB82AA686}"

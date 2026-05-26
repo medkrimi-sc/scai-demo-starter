@@ -1,6 +1,6 @@
 ---
-ID: "9bf3f65f-0026-4646-bc42-5e7629b8636c"
-Parent: "b394b203-8be5-4e71-bdc7-0ceeb6b92c57"
+ID: "21d7fc30-7901-4b89-95d0-e28dc1b7b6b6"
+Parent: "a013f132-20bf-452c-87dd-edc387680495"
 Template: "46d29149-02ab-4ef1-af37-e765e26a7e2f"
 Path: "/sitecore/content/viatris/viatris/Home/Data/Home Page Product Listing"
 BranchID: "9ba623cf-080b-4074-9a36-e54550ca4d13"
@@ -25,9 +25,9 @@ Languages:
     - ID: "269bdf45-6360-4ad8-b9b6-10f211ac447d"
       Hint: products
       Value: |
-        {6CCF5A5D-02A2-4568-AD45-B5B792380016}
-        {A4E8676C-1AE7-4A03-A7E4-F97180554C51}
-        {E99E9772-169D-4953-A8CE-125AF397AC72}
+        {AE5A90B9-1C31-47F0-A61D-FB74EA6C0E58}
+        {58ABBEB6-1573-4DFF-836F-B32B246F27BB}
+        {46E8432E-C52C-4ABB-A44A-0E7D11B0B3F2}
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: "{4460E76C-87E9-4859-9DE6-DE122774937F}"

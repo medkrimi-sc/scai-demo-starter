@@ -1,12 +1,12 @@
 ---
-ID: "a1b2c3d4-e5f6-4789-a012-3456789ab001"
-Parent: "fcc879a7-38a8-4dce-9c5e-fcc75eb6b305"
+ID: "65ac24e8-c9f2-4ee2-8435-fd9e45c3979c"
+Parent: "f1d7b29d-028a-43ab-b732-6a635a40b447"
 Template: "1105b8f8-1e00-426b-bf1f-c840742d827b"
 Path: "/sitecore/content/viatris/viatris/Presentation/Page Designs/Advice Zone Listing"
 SharedFields:
 - ID: "0966b999-0d0e-4278-acc9-9da69d461fe6"
   Hint: PartialDesigns
-  Value: "b2fd2ccb-0c82-4bbf-ae06-1ae64148e4cb|9fd21ee0-92cb-442f-834a-5d8ee9bdd561"
+  Value: "f774882c-8c88-4839-a268-3a8fbcaf9bd0|d9421302-7b29-4764-b4b3-16b30750d3a1"
 Languages:
 - Language: en
   Fields:

@@ -1,6 +1,6 @@
 ---
-ID: "d1e2f3a4-b5c6-4789-a012-345678901708"
-Parent: "e1c2b39a-8d1a-4a7a-84ad-28cfba4861f8"
+ID: "b62d9e36-0d05-482e-8ec4-669e10553474"
+Parent: "b3147da2-b879-45c8-9456-4f37417c9646"
 Template: "a9919790-3389-4fc2-abc8-24f73c847c8e"
 Path: "/sitecore/content/viatris/viatris/Home/Search"
 BranchID: "c1a2b3c4-d5e6-4789-a012-345678901620"
@@ -25,7 +25,7 @@ Languages:
               p:before="*"
               s:ds="/sitecore/content/viatris/viatris/Data/Search Experiences/Site Search"
               s:id="{F6952169-D48B-4612-9C31-AC13CAC54C61}"
-              s:par="columns=3&amp;pageSize=12&amp;FieldNames=%7BD1E2F3A4-B5C6-4789-A012-345678901704%7D&amp;CSSStyles&amp;DynamicPlaceholderId=1"
+              s:par="columns=3&amp;pageSize=12&amp;FieldNames=%7B409EC88E-876C-4C3B-BC30-CD3495B79A42%7D&amp;CSSStyles&amp;DynamicPlaceholderId=1"
               s:ph="headless-main" />
           </d>
         </r>

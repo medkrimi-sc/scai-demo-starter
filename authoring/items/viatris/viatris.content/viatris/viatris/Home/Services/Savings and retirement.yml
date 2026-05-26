@@ -1,6 +1,6 @@
 ---
-ID: "a4e8676c-1ae7-4a03-a7e4-f97180554c51"
-Parent: "d6700d73-a67c-450e-b665-e1b1b1adb228"
+ID: "58abbeb6-1573-4dff-836f-b32b246f27bb"
+Parent: "b80c5cc8-26d5-4d4e-a286-8a3d8b1875d2"
 Template: "57a49603-1dfb-40a1-9ddf-56a7835062dd"
 Path: "/sitecore/content/viatris/viatris/Home/Services/Savings and retirement"
 BranchID: "6b289b7b-5c87-4423-aee6-bf33e0627fbb"
@@ -51,21 +51,21 @@ Languages:
               p:after="r[@uid='{30027D95-0029-4931-8446-4DF88D40979C}']"
               s:ds="local:/Data/Image Gallery 1"
               s:id="{939246CC-DAAB-4FE9-A265-536995A04122}"
-              s:par="FieldNames={D05ED32B-9AAC-487B-A4B7-7841423EA166}&amp;CSSStyles&amp;DynamicPlaceholderId=7"
+              s:par="FieldNames={7ACB32A4-7C8A-4DA8-8107-E678BAC647B1}&amp;CSSStyles&amp;DynamicPlaceholderId=7"
               s:ph="/headless-main/container-fullbleed-1/container-fullwidth-6" />
             <r
               uid="{CC9C4A45-F831-48E1-88C7-ADA370D45D84}"
               p:after="r[@uid='{E4B6A5DE-BB47-4F6B-88EA-BFAAF080BA47}']"
               s:ds="local:/Data/Page Header 1"
               s:id="{C78595D2-0892-4EC6-9FF8-B71EDBF17861}"
-              s:par="FieldNames={DB88DC04-63EF-475D-A7AA-C4C068D0010E}&amp;CSSStyles&amp;DynamicPlaceholderId=2"
+              s:par="FieldNames={3C489D7D-091C-4297-B245-D7AEE76DC5C2}&amp;CSSStyles&amp;DynamicPlaceholderId=2"
               s:ph="/headless-main/container-fullbleed-1" />
             <r
               uid="{8932F8F8-617F-44D0-B144-0C97D540A123}"
               p:after="r[@uid='{CC9C4A45-F831-48E1-88C7-ADA370D45D84}']"
               s:ds="local:/Data/Text Banner - Nexa - Demo Official"
               s:id="{E7B031D3-161F-4391-8B23-785FC8445D1E}"
-              s:par="FieldNames={7390416E-277F-425F-8DD6-AE92EBAF62CB}&amp;CSSStyles&amp;DynamicPlaceholderId=3"
+              s:par="FieldNames={4A37584B-AC5D-428E-BECE-AAE29E938322}&amp;CSSStyles&amp;DynamicPlaceholderId=3"
               s:ph="/headless-main/container-fullbleed-1" />
             <r
               uid="{C4127ED2-4B2F-4978-ACF5-243349FA9358}"
@@ -78,14 +78,14 @@ Languages:
               p:after="r[@uid='{C4127ED2-4B2F-4978-ACF5-243349FA9358}']"
               s:ds="local:/Data/Promo 2 - Nexa - Demo Official"
               s:id="{945776A1-8F30-4749-A668-4FCC434A60ED}"
-              s:par="FieldNames={C95A74ED-17E5-4231-8C58-820C53F1B6CC}&amp;orientation&amp;CSSStyles&amp;DynamicPlaceholderId=8"
+              s:par="FieldNames={3E0C1D0C-4221-42AD-869C-E097B1E23811}&amp;orientation&amp;CSSStyles&amp;DynamicPlaceholderId=8"
               s:ph="/headless-main/container-fullbleed-1" />
             <r
               uid="{D191FABD-E349-4232-AD80-944E82317B56}"
               p:after="r[@uid='{9B7DE353-9A75-4B32-B91F-68D36E0E6294}']"
               s:ds="local:/Data/Promo - Nexa - Cars on road"
               s:id="{945776A1-8F30-4749-A668-4FCC434A60ED}"
-              s:par="FieldNames={C95A74ED-17E5-4231-8C58-820C53F1B6CC}&amp;orientation&amp;CSSStyles&amp;DynamicPlaceholderId=4"
+              s:par="FieldNames={3E0C1D0C-4221-42AD-869C-E097B1E23811}&amp;orientation&amp;CSSStyles&amp;DynamicPlaceholderId=4"
               s:ph="/headless-main/container-fullbleed-1" />
             <r
               uid="{D3E7E8F3-38F1-4AA0-A4D1-256DFD047DAB}"
@@ -131,7 +131,7 @@ Languages:
         <image mediaid="0ebe6e10-2a32-4b20-aca4-8e6c26224d74" />
     - ID: "69c33f09-f870-4d18-86c6-c34d9f3ac290"
       Hint: taxContentType
-      Value: "{65BB480D-2B75-49B6-98AE-8DC14EA40A16}"
+      Value: "{DBBF9CE8-AFB6-4B96-87CA-D8F514429B6B}"
     - ID: "8535365d-ae76-4875-ab5b-a618d5819af0"
       Hint: metadataTitle
       Value: Alaris Nexa

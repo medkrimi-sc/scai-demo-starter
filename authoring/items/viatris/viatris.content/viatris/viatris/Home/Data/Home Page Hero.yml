@@ -1,6 +1,6 @@
 ---
-ID: "2ce74dad-214a-4fd7-a0a1-e4c4ca9784f8"
-Parent: "b394b203-8be5-4e71-bdc7-0ceeb6b92c57"
+ID: "ecffde66-c11b-4c26-836e-ed5280585da7"
+Parent: "a013f132-20bf-452c-87dd-edc387680495"
 Template: "ae018465-4e68-4a49-8b15-9702274fa75a"
 Path: "/sitecore/content/viatris/viatris/Home/Data/Home Page Hero"
 BranchID: "9ba623cf-080b-4074-9a36-e54550ca4d13"
@@ -45,7 +45,7 @@ Languages:
     - ID: "b80f6e4e-44ec-4bf5-92b0-f50f71530c06"
       Hint: bannerCTA
       Value: |
-        <link class="" id="{650EF73D-409F-445E-B505-077B288EBE38}" querystring="" anchor="" target="" title="" linktype="internal" text="Schedule a Test Drive" url="" />
+        <link class="" id="{88890143-0F47-4B32-81FC-2FED23E32792}" querystring="" anchor="" target="" title="" linktype="internal" text="Schedule a Test Drive" url="" />
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |

@@ -1,6 +1,6 @@
 ---
-ID: "c7d8e9f0-a1b2-4345-c678-901234567890"
-Parent: "b6c7d8e9-f0a1-4234-b567-890123456789"
+ID: "3dce0b21-ff5f-491c-92a2-011963dd413c"
+Parent: "06ffa9d1-16b7-4f7f-bcd0-c7e4601b8864"
 Template: "705c014a-ced4-409a-89b7-09350cc98116"
 Path: "/sitecore/content/viatris/viatris/Data/Article Listing Folder/Article Listing"
 Languages:
@@ -14,7 +14,7 @@ Languages:
     - ID: "341d70c8-1429-41de-99f7-015714658bf8"
       Hint: linkOptional
       Value: |
-        <link class="" querystring="" id="a809e6c4-a80f-4126-a60b-572984c1696c" anchor="" target="" title="" linktype="internal" text="Découvrir nos conseils" url="/viatris/Home/Advice Zone" />
+        <link class="" querystring="" id="24264baf-fc58-4731-aa8a-43ead20fc260" anchor="" target="" title="" linktype="internal" text="Découvrir nos conseils" url="/viatris/Home/Advice Zone" />
     - ID: "4d116c64-41a2-4c2b-857a-c268c13b8a72"
       Hint: descriptionOptional
       Value: Practical tips and expert advice to help you protect what matters most.

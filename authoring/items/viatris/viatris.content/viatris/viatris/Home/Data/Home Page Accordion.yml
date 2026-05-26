@@ -1,6 +1,6 @@
 ---
-ID: "e27b970c-05d0-4270-ba73-158da024994f"
-Parent: "b394b203-8be5-4e71-bdc7-0ceeb6b92c57"
+ID: "880f46b9-89c7-41dc-ae77-2309feafff51"
+Parent: "a013f132-20bf-452c-87dd-edc387680495"
 Template: "4dddcbac-a737-4c55-8ec8-508f1550d44a"
 Path: "/sitecore/content/viatris/viatris/Home/Data/Home Page Accordion"
 BranchID: "9ba623cf-080b-4074-9a36-e54550ca4d13"
@@ -39,7 +39,7 @@ Languages:
     - ID: "6938a6f3-824b-41d6-83ce-bce57f4cb90a"
       Hint: link
       Value: |
-        <link id="{650EF73D-409F-445E-B505-077B288EBE38}" linktype="internal" url="" />
+        <link id="{88890143-0F47-4B32-81FC-2FED23E32792}" linktype="internal" url="" />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
       Value: "0f4584bf-b402-4543-bc52-c59cde660d6b"
@@ -77,7 +77,7 @@ Languages:
     - ID: "6938a6f3-824b-41d6-83ce-bce57f4cb90a"
       Hint: link
       Value: |
-        <link id="{650EF73D-409F-445E-B505-077B288EBE38}" linktype="internal" url="" />
+        <link id="{88890143-0F47-4B32-81FC-2FED23E32792}" linktype="internal" url="" />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
       Value: "8f959184-ffad-4c9a-a8cb-6e47f748bb37"

@@ -1,6 +1,6 @@
 ---
-ID: "5a1264a1-331e-4076-8713-03dde60dacb6"
-Parent: "87971faa-c89a-4b25-bde1-8d9642ccc456"
+ID: "f284422f-f624-4334-9247-7cbbabd17736"
+Parent: "7db1803f-b9ce-49cf-aa19-e1aa4d6e0db1"
 Template: "efd96479-7bf2-4be1-a08a-b01e59f92cdc"
 Path: "/sitecore/content/viatris/viatris/Presentation/Partial Designs/Global/Header/Data/Global Header"
 BranchID: "5a9aaf68-3342-4682-bd1d-33e7d00bac8b"
@@ -47,7 +47,7 @@ Languages:
     - ID: "e3289100-a242-4fc7-814f-0ffef0ffe8bd"
       Hint: headerContact
       Value: |
-        <link linktype="internal" id="{650EF73D-409F-445E-B505-077B288EBE38}" anchor="" querystring="" target="" class="" text="Talk to an advisor" title=""/>
+        <link linktype="internal" id="{88890143-0F47-4B32-81FC-2FED23E32792}" anchor="" querystring="" target="" class="" text="Talk to an advisor" title=""/>
     - ID: "f073d52d-022c-4560-90c2-71fc674cf8bf"
       Hint: primaryNavigationLinks
       Value: |

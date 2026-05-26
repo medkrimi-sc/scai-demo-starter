@@ -1,6 +1,6 @@
 ---
-ID: "b6b756c5-3c57-49d4-a36e-4d78548ffc43"
-Parent: "a809e6c4-a80f-4126-a60b-572984c1696c"
+ID: "1be44950-5275-4f56-9b24-591ca1ec6ac1"
+Parent: "24264baf-fc58-4731-aa8a-43ead20fc260"
 Template: "b0602368-f67c-433c-8700-862d480546d0"
 Path: "/sitecore/content/viatris/viatris/Home/Advice Zone/IA Article Page"
 BranchID: "e1f2a3b4-c5d6-4789-a012-345678901001"
@@ -44,28 +44,28 @@ Languages:
               uid="{A1B2C3D4-E5F6-4789-A012-345678901101}"
               p:before="*"
               s:id="{B4CBCB8F-9096-4888-AC6E-34DF687276FB}"
-              s:par="FieldNames=%7BF5A6B7C8-A9B0-4123-E456-789012345005%7D&amp;CSSStyles&amp;DynamicPlaceholderId=1"
+              s:par="FieldNames=%7B5448F274-BAA8-4AAB-926F-E6224154C51D%7D&amp;CSSStyles&amp;DynamicPlaceholderId=1"
               s:ph="headless-main" />
             <r
               uid="{A1B2C3D4-E5F6-4789-A012-345678901102}"
               p:after="r[@uid='{A1B2C3D4-E5F6-4789-A012-345678901101}']"
               s:ds="local:/Data/Article Header"
               s:id="{DD6C6E80-1458-4276-B753-001691C8841C}"
-              s:par="FieldNames=%7BF6A7B8C9-B0C1-4234-F567-890123456006%7D&amp;CSSStyles&amp;DynamicPlaceholderId=2"
+              s:par="FieldNames=%7B99178A26-861D-4615-86C9-1726F1B2DB6F%7D&amp;CSSStyles&amp;DynamicPlaceholderId=2"
               s:ph="headless-main" />
             <r
               uid="{A1B2C3D4-E5F6-4789-A012-345678901103}"
               p:after="r[@uid='{A1B2C3D4-E5F6-4789-A012-345678901102}']"
               s:ds="local:/Data/Article Body"
               s:id="{50B36874-8C4E-4958-9DD6-8B95C6AFD09A}"
-              s:par="FieldNames=%7BF7A8B9C0-C1D2-4345-A678-901234567007%7D&amp;CSSStyles&amp;DynamicPlaceholderId=3"
+              s:par="FieldNames=%7B44FE99AF-B0D4-4766-A3D3-8B18DC5A555B%7D&amp;CSSStyles&amp;DynamicPlaceholderId=3"
               s:ph="headless-main" />
             <r
               uid="{1F9790EC-A3C2-494E-94AE-E21682D2178D}"
               p:after="*[1=2]"
               s:ds="local:/Data/Promo Advice zone"
               s:id="{945776A1-8F30-4749-A668-4FCC434A60ED}"
-              s:par="FieldNames=%7BC95A74ED-17E5-4231-8C58-820C53F1B6CC%7D&amp;orientation&amp;CSSStyles&amp;DynamicPlaceholderId=4"
+              s:par="FieldNames=%7B3E0C1D0C-4221-42AD-869C-E097B1E23811%7D&amp;orientation&amp;CSSStyles&amp;DynamicPlaceholderId=4"
               s:ph="headless-main" />
           </d>
         </r>

@@ -1,6 +1,6 @@
 ---
-ID: "d85555c0-7d2c-4d1d-b88b-bd471406448e"
-Parent: "6667b77b-2c6e-4282-941a-f292090b309e"
+ID: "74ba9306-d98d-4ccc-85fd-7c6ab86be378"
+Parent: "7b1ab3bf-7b2e-4956-b034-172727b83333"
 Template: "fd2059fd-6043-4dfe-8c04-e2437ce87634"
 Path: "/sitecore/content/viatris/viatris/Presentation/Partial Designs/Global/Footer"
 BranchID: "5a9aaf68-3342-4682-bd1d-33e7d00bac8b"
@@ -37,7 +37,7 @@ Languages:
               uid="{7670F278-9408-43FA-AC03-4099672A8726}"
               s:ds="local:/Data/Global Footer"
               s:id="{1648D90C-709E-4FD1-92C1-A37BDF08F1FF}"
-              s:par="FieldNames={70A8BB05-3746-4FAE-987B-43A8CE7E3084}&amp;CSSStyles&amp;DynamicPlaceholderId=1"
+              s:par="FieldNames={82EDE981-28F8-4DC8-92AD-30B6D002D80A}&amp;CSSStyles&amp;DynamicPlaceholderId=1"
               s:ph="headless-footer" />
           </d>
         </r>
